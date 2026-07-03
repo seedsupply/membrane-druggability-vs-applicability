@@ -48,7 +48,7 @@ def main():
     corr = pd.read_csv('data/gpcr_correlation_results.csv')
     fpocket = pd.read_csv('data/fpocket_gpcr_results.csv')
 
-    df = corr.merge(fpocket[['UniProt','drug_score','pocket_volume','n_pockets']],
+    df = corr.merge(fpocket[['UniProt','druggability_score','pocket_volume','n_pockets']],
                     on='UniProt', how='left')
 
     y = df['Pearson_r'].values
@@ -56,14 +56,6 @@ def main():
     print("=" * 60)
     print("GPCR Feature Analysis (n=100 targets)")
     print("=" * 60)
-
-    # 1. CWxP subtype
-    if 'CWxP_subtype' in df.columns:
-        r2, p = calculate_r2(df['CWxP_subtype'].values, y)
-        print(f"CWxP_subtype (0/1/2):     r²={r2}%, P={p}")
-    elif 'has_CWxP' in df.columns:
-        r2, p = calculate_r2(df['has_CWxP'].values.astype(float), y)
-        print(f"CWxP (0/1):               r²={r2}%, P={p}")
 
     # 2. ipTM score (if available)
     if 'iptm_mean' in df.columns:
@@ -80,9 +72,9 @@ def main():
         r2, p = calculate_r2(df['MW_diversity'].values, y)
         print(f"Compound MW diversity:    r²={r2}%, P={p}")
 
-    # 5. fpocket drug_score
-    r2, p = calculate_r2(df['drug_score'].values, y)
-    print(f"fpocket drug_score:       r²={r2}%, P={p}")
+    # 5. fpocket druggability_score
+    r2, p = calculate_r2(df['druggability_score'].values, y)
+    print(f"fpocket druggability_score:       r²={r2}%, P={p}")
 
     # 6. std_aff_value (post-hoc)
     if 'std_aff_value' in df.columns:
@@ -95,7 +87,7 @@ def main():
 
     # GPCR combined model
     feature_cols = []
-    for col in ['has_CWxP', 'logP_mean', 'iptm_mean', 'std_aff_value']:
+    for col in ['logP_mean', 'iptm_mean', 'std_aff_value']:
         if col in df.columns:
             feature_cols.append(col)
 
@@ -104,19 +96,6 @@ def main():
         R2 = combined_model(X, y, feature_cols)
         print(f"Features: {feature_cols}")
         print(f"Combined R² = {R2}%")
-
-    # CWxP group comparison
-    print("\n" + "=" * 60)
-    print("CWxP Group Comparison")
-    print("=" * 60)
-
-    if 'has_CWxP' in df.columns:
-        pos = df[df['has_CWxP']==1]['Pearson_r']
-        neg = df[df['has_CWxP']==0]['Pearson_r']
-        stat, p = stats.mannwhitneyu(pos, neg, alternative='greater')
-        print(f"CWxP(+) n={len(pos)}: median={pos.median():.3f}, mean={pos.mean():.3f}")
-        print(f"CWxP(-) n={len(neg)}: median={neg.median():.3f}, mean={neg.mean():.3f}")
-        print(f"Mann-Whitney U, P={p:.4f}")
 
 if __name__ == '__main__':
     main()

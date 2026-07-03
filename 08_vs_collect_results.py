@@ -26,9 +26,8 @@ def load_summary():
         return None
 
 def group_analysis(df):
-    """Analyze performance by Pearson's r group and CWxP status."""
     print("=" * 60)
-    print("Virtual Screening Performance Summary (n=11 targets)")
+    print(f"Virtual Screening Performance Summary (n={len(df)} targets)")
     print("=" * 60)
 
     # By Pearson r group
@@ -49,27 +48,8 @@ def group_analysis(df):
         print(f"  EF@1%: median={subset['EF_1pct'].median():.1f}, "
               f"range={subset['EF_1pct'].min():.1f}–{subset['EF_1pct'].max():.1f}")
 
-    # By CWxP status
-    print("\n--- By CWxP status ---")
-    for cwxp, label in [(1, 'CWxP(+)'), (0, 'CWxP(-)')]:
-        subset = df[df['has_CWxP'] == cwxp]
-        print(f"\n{label} (n={len(subset)}):")
-        print(f"  AUROC: median={subset['AUROC'].median():.3f}")
-        print(f"  EF@1%: median={subset['EF_1pct'].median():.1f}")
-
-    # Statistical tests
-    print("\n--- Statistical tests ---")
-    pos = df[df['has_CWxP'] == 1]['AUROC'].dropna()
-    neg = df[df['has_CWxP'] == 0]['AUROC'].dropna()
-    stat, p = stats.mannwhitneyu(pos, neg, alternative='two-sided')
-    print(f"AUROC: CWxP(+) vs CWxP(-), Mann-Whitney U, P={p:.4f}")
-
-    pos_ef = df[df['has_CWxP'] == 1]['EF_1pct'].dropna()
-    neg_ef = df[df['has_CWxP'] == 0]['EF_1pct'].dropna()
-    stat2, p2 = stats.mannwhitneyu(pos_ef, neg_ef, alternative='two-sided')
-    print(f"EF@1%: CWxP(+) vs CWxP(-), Mann-Whitney U, P={p2:.4f}")
-
-    # Pearson r vs AUROC correlation
+    # Statistical tests: ranking accuracy vs screening performance
+    print("\n--- Ranking accuracy vs screening performance ---")
     r_auroc, p_auroc = stats.pearsonr(df['Pearson_r'], df['AUROC'])
     r_ef1, p_ef1 = stats.pearsonr(df['Pearson_r'], df['EF_1pct'])
     print(f"\nPearson r vs AUROC: r={r_auroc:.3f}, P={p_auroc:.4f}")
@@ -81,7 +61,7 @@ def print_per_target_table(df):
     print("Per-target Results (ordered by Pearson's r)")
     print("=" * 80)
     df_sorted = df.sort_values('Pearson_r', ascending=False)
-    cols = ['Target', 'has_CWxP', 'Pearson_r', 'AUROC',
+    cols = ['Target', 'Pearson_r', 'Sep', 'AUROC', 'Average_Precision',
             'EF_0.5pct', 'EF_1pct', 'EF_5pct', 'EF_10pct']
     available_cols = [c for c in cols if c in df_sorted.columns]
     print(df_sorted[available_cols].to_string(index=False))

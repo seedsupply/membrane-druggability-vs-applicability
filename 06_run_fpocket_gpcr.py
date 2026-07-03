@@ -56,7 +56,7 @@ def parse_fpocket_info(fpocket_dir, target):
     if not os.path.exists(info_file):
         return None, None, len(pocket_files)
 
-    drug_scores = []
+    druggability_scores = []
     pocket_volumes = []
 
     with open(info_file) as f:
@@ -67,17 +67,17 @@ def parse_fpocket_info(fpocket_dir, target):
         score = re.search(r'Druggability Score\s*:\s*([\d.]+)', pocket)
         volume = re.search(r'Volume\s*:\s*([\d.]+)', pocket)
         if score:
-            drug_scores.append(float(score.group(1)))
+            druggability_scores.append(float(score.group(1)))
         if volume:
             pocket_volumes.append(float(volume.group(1)))
 
-    if not drug_scores:
+    if not druggability_scores:
         return None, None, 0
 
-    best_idx = int(np.argmax(drug_scores))
-    return (round(max(drug_scores), 3),
+    best_idx = int(np.argmax(druggability_scores))
+    return (round(max(druggability_scores), 3),
             round(pocket_volumes[best_idx], 3) if pocket_volumes else None,
-            len(drug_scores))
+            len(druggability_scores))
 
 def main():
     # Load target list
@@ -113,23 +113,23 @@ def main():
             continue
 
         # Parse results
-        drug_score, pocket_volume, n_pockets = parse_fpocket_info(
+        druggability_score, pocket_volume, n_pockets = parse_fpocket_info(
             fpocket_dir, target)
 
         results.append({
             'UniProt': uniprot,
             'Target': target,
-            'drug_score': drug_score,
+            'druggability_score': druggability_score,
             'pocket_volume': pocket_volume,
             'n_pockets': n_pockets
         })
-        print(f"  drug_score={drug_score}, pocket_volume={pocket_volume}, "
+        print(f"  druggability_score={druggability_score}, pocket_volume={pocket_volume}, "
               f"n_pockets={n_pockets}")
 
     df = pd.DataFrame(results)
     df.to_csv('data/fpocket_gpcr_results.csv', index=False)
     print(f"\nSaved: data/fpocket_gpcr_results.csv ({len(df)} targets)")
-    print(f"Median drug_score: {df['drug_score'].median():.3f}")
+    print(f"Median druggability_score: {df['druggability_score'].median():.3f}")
     print(f"Median pocket_volume: {df['pocket_volume'].median():.1f}")
 
 if __name__ == '__main__':

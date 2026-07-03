@@ -2,12 +2,16 @@
 07_vs_analysis.py
 =================
 Virtual screening enrichment analysis
-Calculates AUROC and Enrichment Factor for GPCR targets
+Calculates separation index (Sep), AUROC, and Enrichment Factor for GPCR targets
 
 Input:  boltz2_outputs/{TARGET}/boltz_results_{TARGET}/predictions/
         data/GPCR_merged_results2.csv (proprietary, for binder labels)
-Output: data/vs_summary_all.csv
+Output: data/vs_summary_all.csv (per-target Sep, AUROC, AP, and EF@0.5/1/2/5/10%)
         results/{TARGET}_vs_results.csv
+        The distributed data/vs_summary_all.csv reports the key columns used in
+        the manuscript (Target, n_binders, Pearson_r, Sep, AUROC,
+        Average_Precision, EF@0.5/1/5/10%); this script writes the full set of
+        computed metrics, from which those columns are drawn.
 
 Usage:
     python 07_vs_analysis.py --target CB1R
@@ -25,17 +29,26 @@ warnings.filterwarnings('ignore')
 
 # Target metadata
 TARGET_INFO = {
-    'CB1R':    {'pearson_r': 0.838, 'has_CWxP': 1},
-    'MTNR1B':  {'pearson_r': 0.836, 'has_CWxP': 1},
-    'ADRB1':   {'pearson_r': 0.592, 'has_CWxP': 1},
-    'CXCR4':   {'pearson_r': 0.451, 'has_CWxP': 1},
-    'OX2R':    {'pearson_r': 0.326, 'has_CWxP': 0},
-    'HTR6':    {'pearson_r': 0.009, 'has_CWxP': 0},
-    'HTR4':    {'pearson_r': -0.040, 'has_CWxP': 1},
-    'GPR37L1': {'pearson_r': -0.303, 'has_CWxP': 0},
-    'CNR2':    {'pearson_r': -0.423, 'has_CWxP': 1},
-    'SMO':     {'pearson_r': -0.557, 'has_CWxP': 0},
-    'CCR3':    {'pearson_r': -0.614, 'has_CWxP': 0},
+    'ADRB1': {'pearson_r': 0.464},
+    'OX2R': {'pearson_r': 0.382},
+    'CB1R': {'pearson_r': 0.830},
+    'MTNR1B': {'pearson_r': 0.876},
+    'DRD3': {'pearson_r': 0.571},
+    'CXCR4': {'pearson_r': 0.449},
+    'HTR6': {'pearson_r': -0.142},
+    'HTR4': {'pearson_r': -0.116},
+    'CCR3': {'pearson_r': -0.542},
+    'CNR2': {'pearson_r': -0.539},
+    'GPR37L1': {'pearson_r': -0.032},
+    'SMO': {'pearson_r': -0.308},
+    'OX1R': {'pearson_r': 0.659},
+    'AGTR1': {'pearson_r': 0.570},
+    'CHRM3': {'pearson_r': 0.814},
+    'F2R': {'pearson_r': 0.537},
+    'HTR7': {'pearson_r': 0.673},
+    'PTGER2': {'pearson_r': 0.581},
+    'CCR2': {'pearson_r': 0.699},
+    'GPR85': {'pearson_r': 0.602},
 }
 
 EF_PERCENTILES = [0.5, 1, 2, 5, 10]
@@ -87,6 +100,19 @@ def calculate_enrichment(df, target):
     except Exception:
         auroc = ap = np.nan
 
+    # Separation index (Sep):
+    #   Sep = (mean_binder - mean_nonbinder) / (std_binder + std_nonbinder)
+    # computed here in pred_pKd space (higher pred_pKd = stronger predicted
+    # binding), so that a positive Sep indicates binders receive
+    # systematically stronger predicted affinities than non-binders.
+    binder_scores = df.loc[df['Is_Binder'] == 1, 'pred_pKd']
+    nonbinder_scores = df.loc[df['Is_Binder'] == 0, 'pred_pKd']
+    std_sum = binder_scores.std() + nonbinder_scores.std()
+    if len(binder_scores) > 1 and len(nonbinder_scores) > 1 and std_sum > 0:
+        sep = round((binder_scores.mean() - nonbinder_scores.mean()) / std_sum, 3)
+    else:
+        sep = np.nan
+
     # Enrichment Factors
     ef_dict = {}
     for pct in EF_PERCENTILES:
@@ -100,11 +126,11 @@ def calculate_enrichment(df, target):
         'n_total': n_total,
         'n_binders': n_binders,
         'binder_rate_pct': round(binder_rate * 100, 2),
+        'Sep': sep,
         'AUROC': round(auroc, 4),
         'Average_Precision': round(ap, 4),
         **ef_dict,
         'Pearson_r': TARGET_INFO.get(target, {}).get('pearson_r', np.nan),
-        'has_CWxP': TARGET_INFO.get(target, {}).get('has_CWxP', np.nan),
     }
     return result, df
 
@@ -152,15 +178,17 @@ def main(target_arg):
         summary.append(metrics)
         sorted_df.to_csv(f'results/{target}_vs_results.csv', index=False)
 
+        print(f"  Sep: {metrics['Sep']}")
         print(f"  AUROC: {metrics['AUROC']:.4f}")
         for pct in EF_PERCENTILES:
             print(f"  EF@{pct}%: {metrics[f'EF_{pct}pct']:.2f}")
 
     if summary:
         summary_df = pd.DataFrame(summary)
+        summary_df = summary_df.sort_values('Sep', ascending=False)
         summary_df.to_csv('data/vs_summary_all.csv', index=False)
         print(f"\nSaved: data/vs_summary_all.csv")
-        print(summary_df[['Target','Pearson_r','AUROC',
+        print(summary_df[['Target','Pearson_r','Sep','AUROC',
                           'EF_1pct','EF_5pct']].to_string(index=False))
 
 if __name__ == '__main__':

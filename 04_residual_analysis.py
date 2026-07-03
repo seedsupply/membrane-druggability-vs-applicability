@@ -55,14 +55,6 @@ def main():
             print(f"threshold={threshold}: high(n={len(high)}) median={high.median():.3f} "
                   f"vs low(n={len(low)}) median={low.median():.3f}, P={pval:.4f}")
 
-    # CWxP stratified analysis
-    if 'has_CWxP' in merged.columns:
-        print("\n--- std_aff_value by CWxP group ---")
-        for cwxp in [1, 0]:
-            group = merged[merged['has_CWxP'] == cwxp]['std_aff_value'].dropna()
-            label = 'CWxP(+)' if cwxp == 1 else 'CWxP(-)'
-            print(f"{label}: median={group.median():.3f}, mean={group.mean():.3f}")
-
     print(f"\nNote: std_aff_value is a post-hoc indicator —")
     print(f"computable only after Boltz-2 prediction execution.")
 

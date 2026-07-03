@@ -28,12 +28,6 @@ def calculate_per_target_correlation(df):
             'Pearson_r': round(r, 3),
             'p_value': round(p, 4),
             'GPCR_class': group['GPCR_class'].iloc[0] if 'GPCR_class' in group.columns else 'Class A',
-            'has_DRY': int(group['has_DRY'].iloc[0]) if 'has_DRY' in group.columns else None,
-            'has_NPxxY': int(group['has_NPxxY'].iloc[0]) if 'has_NPxxY' in group.columns else None,
-            'has_CWxP': int(group['has_CWxP'].iloc[0]) if 'has_CWxP' in group.columns else None,
-            'cys_count': group['cys_count'].iloc[0] if 'cys_count' in group.columns else None,
-            'trp_count': group['trp_count'].iloc[0] if 'trp_count' in group.columns else None,
-            'asp_count': group['asp_count'].iloc[0] if 'asp_count' in group.columns else None,
         })
     return pd.DataFrame(results).sort_values('Pearson_r', ascending=False)
 
@@ -57,13 +51,6 @@ def main():
     print(f"  Median Pearson's r: {results['Pearson_r'].median():.3f}")
     print(f"  Strong predictors (r >= 0.5): {(results['Pearson_r'] >= 0.5).sum()}")
     print(f"  Inverse predictors (r < 0): {(results['Pearson_r'] < 0).sum()}")
-
-    # CWxP analysis
-    if 'has_CWxP' in results.columns:
-        cwxp_pos = results[results['has_CWxP'] == 1]['Pearson_r']
-        cwxp_neg = results[results['has_CWxP'] == 0]['Pearson_r']
-        stat, pval = stats.mannwhitneyu(cwxp_pos, cwxp_neg, alternative='greater')
-        print(f"\nCWxP(+) vs CWxP(-): median {cwxp_pos.median():.3f} vs {cwxp_neg.median():.3f}, P={pval:.4f}")
 
     results.to_csv('data/gpcr_correlation_results.csv', index=False)
     print(f"\nSaved: data/gpcr_correlation_results.csv")
