@@ -1,4 +1,4 @@
-UniProt,Target,drug_score,pocket_volume,n_pockets
+UniProt,Target,druggability_score,pocket_volume,n_pockets
 P48960,ADGRE5,0.934,878.396,63
 P30542,ADORA1,0.652,1208.162,22
 P29274,ADORA2A,0.901,903.595,28
