@@ -30,10 +30,10 @@ All files are one row per target.
 
 | File | n | Contents | Used in |
 |---|---|---|---|
-| `data/gpcr_VS_FINAL_20.csv` | 20 | GPCR virtual-screening metrics: AUROC, EF at 0.5% and 1%, Sep, ranking accuracy, outcome | Fig. 3, 4, 5; Table 1; Suppl. Table S3 |
-| `data/gpcr_tail_FINAL_20.csv` | 20 | GPCR predicted-score distribution statistics: binder/non-binder means, SDs, percentiles, Sep, binder top margin | Fig. 5, 6; Suppl. Table S3 |
-| `data/slc_VS_FINAL_23.csv` | 23 | As above for accessible-cavity SLC transporters, with distribution statistics included | Fig. 3, 4, 5, 6; Table 1; Suppl. Table S3 |
-| `data/clsprob_FINAL.csv` | 43 | AUROC, EF@1% and Sep computed from each of the two Boltz-2 scalar outputs (predicted affinity value; binary classification probability) | Fig. 7; Table 1; Suppl. Table S5 |
+| `data/gpcr_VS_FINAL_20.csv` | 20 | GPCR virtual-screening metrics: AUROC, EF at 0.5% and 1%, Sep, ranking accuracy, outcome | Fig. 3, 4, 5; Table 1; Suppl. Table S4 |
+| `data/gpcr_tail_FINAL_20.csv` | 20 | GPCR predicted-score distribution statistics: binder/non-binder means, SDs, percentiles, Sep, binder top margin | Fig. 5, 6; Suppl. Table S4 |
+| `data/slc_VS_FINAL_23.csv` | 23 | As above for accessible-cavity SLC transporters, with distribution statistics included | Fig. 3, 4, 5, 6; Table 1; Suppl. Table S4 |
+| `data/clsprob_FINAL.csv` | 43 | AUROC, EF@1% and Sep computed from each of the two Boltz-2 scalar outputs (predicted affinity value; binary classification probability) | Fig. 7; Table 1; Suppl. Table S7 |
 | `data/sep_decomp_gpcr.csv` | 20 | Decomposition of Sep into its components for GPCRs | Fig. 6a |
 | `data/sep_decomp_slc.csv` | 23 | Decomposition of Sep into its components for accessible-cavity transporters | Fig. 6a |
 | `data/slc_ranking_accuracy_82.csv` | 82 | Per-target ranking accuracy (Pearson's *r* between predicted score and experimental pKd) over the binder set only, for all SLC transporters with at least 10 binder pairs | Results (individual cases); Methods |
