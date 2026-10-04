@@ -2,7 +2,7 @@
 
 Aggregate data and analysis code for:
 
-**Defining the applicability domain of AI-based affinity prediction using experimentally standardized membrane-protein benchmarks**
+**Delineating the applicability domain of an AI affinity predictor using an experimentally standardized membrane-protein benchmark**
 Naoki Tarui, Thuy Duong Nguyen, Masaharu Nakayama
 SEEDSUPPLY INC., Japan
 
@@ -10,9 +10,11 @@ SEEDSUPPLY INC., Japan
 
 ## What this repository contains
 
-Target-level aggregate metrics supporting all figures and tables in the manuscript, together with the scripts that reproduce the reported statistics from those metrics.
+Target-level aggregate metrics supporting every figure and table in the manuscript, together with the scripts that reproduce the reported statistics from those metrics.
 
 **This repository does not contain per-compound data.** Individual compound structures and per-compound binding measurements from the Binder2030 platform are proprietary and available under a Data Use Agreement from the corresponding author for academic research; per-compound model predictions are available under the same agreement. A PubChem-overlap subset of the experimental data has been released separately (Tarui, N., Nakayama, M. & Nguyen, T. D. *SLAS Discov.* **39**, 100299, 2026).
+
+The deposited files are sufficient to reproduce all reported statistical analyses, figures and tables without access to the proprietary compound-level measurements.
 
 ---
 
@@ -20,26 +22,31 @@ Target-level aggregate metrics supporting all figures and tables in the manuscri
 
 All files are one row per target.
 
-### Experimental druggability
+### Experimental ligandability
 
 | File | n | Contents | Used in |
 |---|---|---|---|
-| `data/druggability_by_fold_592.csv` | 592 | Per-target screening outcome (hit / no hit) for 296 GPCRs and 296 SLC transporters, with protein family and, for SLC transporters, structural fold class | Fig. 2; Results (hit recovery, Fisher, chi-square) |
+| `data/slc_targets_296.csv` | 296 | Per-target screening outcome, structural fold, mechanistic class, subcellular location and structure-derived descriptors for all SLC transporters | Fig. 2; Results §2; Suppl. Table S1 |
+| `data/gpcr_targets_295.csv` | 295 | Per-target screening outcome and CWxP toggle-switch status for all GPCRs | Fig. 2; Results §2; Suppl. Table S2 |
 
-### AI virtual-screening evaluation
+### Virtual-screening evaluation
 
 | File | n | Contents | Used in |
 |---|---|---|---|
-| `data/gpcr_VS_FINAL_20.csv` | 20 | GPCR virtual-screening metrics: AUROC, EF at 0.5% and 1%, Sep, ranking accuracy, outcome | Fig. 3, 4, 5; Table 1; Suppl. Table S4 |
-| `data/gpcr_tail_FINAL_20.csv` | 20 | GPCR predicted-score distribution statistics: binder/non-binder means, SDs, percentiles, Sep, binder top margin | Fig. 5, 6; Suppl. Table S4 |
-| `data/slc_VS_FINAL_23.csv` | 23 | As above for accessible-cavity SLC transporters, with distribution statistics included | Fig. 3, 4, 5, 6; Table 1; Suppl. Table S4 |
-| `data/clsprob_FINAL.csv` | 43 | AUROC, EF@1% and Sep computed from each of the two Boltz-2 scalar outputs (predicted affinity value; binary classification probability) | Fig. 7; Table 1; Suppl. Table S7 |
-| `data/sep_decomp_gpcr.csv` | 20 | Decomposition of Sep into its components for GPCRs | Fig. 6a |
-| `data/sep_decomp_slc.csv` | 23 | Decomposition of Sep into its components for accessible-cavity transporters | Fig. 6a |
-| `data/slc_ranking_accuracy_82.csv` | 82 | Per-target ranking accuracy (Pearson's *r* between predicted score and experimental pKd) over the binder set only, for all SLC transporters with at least 10 binder pairs | Results (individual cases); Methods |
-| `data/mechanism_slc.csv` | 23 | Per-target interface predicted TM-score (ipTM) and confidence alongside Sep and binder scores | Fig. 6b |
+| `data/per_target_metrics.csv` | 43 | Consolidated per-target metrics for the 20 GPCRs and 23 accessible-cavity SLC transporters evaluated: AUROC, EF at 0.5%, 1% and 5%, BEDROC at three α values, the separation index, per-target ranking accuracy, binder prevalence, the attainable EF maximum, the random expectation of BEDROC, and bootstrap 95% confidence intervals for every metric | Fig. 3, 6; Table 1; Suppl. Tables S4, S5 |
+| `data/score_distributions.csv` | 43 | Predicted-score distribution statistics per target: binder and non-binder means, standard deviations, percentiles, the separation index, the binder top margin, and interface confidence (ipTM) | Results §6; Suppl. Table S4 |
+| `data/clsprob_FINAL.csv` | 43 | AUROC, EF@1% and Sep computed from each of the two Boltz-2 scalar outputs (predicted affinity value; binary classification probability) | Fig. 8; Suppl. Table S7 |
+| `data/slc_ranking_accuracy_82.csv` | 82 | Per-target ranking accuracy over the binder set only, for all SLC transporters with at least 10 binder pairs | Results §4; Methods |
 
-Structural descriptors used in the target-side analysis (fpocket druggability score and pocket count, P2Rank top score, pLDDT) are provided in the virtual-screening files above and, for the full target set, as Supplementary Tables S2 and S7 with the manuscript.
+### Analyses of candidate explanations
+
+| File | n | Contents | Used in |
+|---|---|---|---|
+| `data/target_descriptors.csv` | 592 | Structure-derived descriptors for all GPCRs and SLC transporters: fpocket druggability score, pocket count and top pocket volume, P2Rank top score, mean pLDDT | Fig. 4; Suppl. Table S6 |
+| `data/training_representation.csv` | 43 | Public-data proxies for representation in the model's training domain: PDB entries before the structure cutoff, the ligand-bound subset, ChEMBL compound and activity-record counts | Fig. 5; Suppl. Table S8 |
+| `data/contact_consistency_24.csv` | 24 | Consistency of model-generated ligand placements at three distance cutoffs, with the spatial spread of ligand centroids | Fig. 7; Suppl. Table S9 |
+| `data/sep_heldout_compound.csv` | 8,538 | Compound-split held-out evaluation of the separation index (200 repetitions per target) | Results §6 |
+| `data/sep_heldout_target.csv` | 43 | Leave-one-target-out held-out evaluation of the separation index | Results §6 |
 
 ---
 
@@ -51,7 +58,7 @@ Structural descriptors used in the target-side analysis (fpocket druggability sc
 predicted score = -affinity_pred_value
 ```
 
-so that higher values indicate stronger predicted binding. A target with `binder_mean > 0` is one where experimental binders are placed on the binding side of the model's own scale.
+so that higher values indicate stronger predicted binding. Zero on this scale is a convention of the model's output and not a calibrated boundary between binding and non-binding.
 
 **Separation index.**
 
@@ -59,7 +66,7 @@ so that higher values indicate stronger predicted binding. A target with `binder
 Sep = (mean_binder - mean_nonbinder) / (SD_binder + SD_nonbinder)
 ```
 
-with sample standard deviations (`ddof = 1`).
+with sample standard deviations (`ddof = 1`). Sep and AUROC are computed from the same predicted scores and the same experimental labels, so their close association is not independent evidence of predictive performance. Sep is a retrospective diagnostic, not a prospective indicator.
 
 **Binder top margin.**
 
@@ -67,17 +74,21 @@ with sample standard deviations (`ddof = 1`).
 binder_top_margin = max(binder scores) - 95th percentile(non-binder scores)
 ```
 
-**Virtual-screening success.** AUROC >= 0.7.
-
-**Hit recovery.** The fraction of targets for which the affinity-selection screen returned at least one compound meeting the binder criterion. This is a per-target measure of experimental druggability and is independent of any model prediction.
-
-**Ranking accuracy.** Per-target ranking accuracy is computed over the experimental binder set only (minimum 10 binder pairs), and is therefore derived from a separate prediction run to the virtual-screening metrics, which score binders against the full non-binder library. `slc_ranking_accuracy_82.csv` reports this quantity for all 82 SLC transporters meeting the pair-count threshold; the 23 transporters evaluated by virtual screening are a subset of these.
-
 **Enrichment factor.**
 
 ```
-EF@X% = (actives in top X% of ranked compounds) / (actives expected at random)
+EF@X% = (h / n) / (k / N)
 ```
+
+where *N* is the number of compounds screened for that target, *n* the number of binders, *k* = ceil(*N* × X%) the size of the top-ranked subset, and *h* the number of binders within it. Because *k* is finite and *n* varies across targets, the attainable maximum is bounded by binder prevalence; the per-target maximum is given in `per_target_metrics.csv`.
+
+**BEDROC.** Computed following Truchon and Bayly (2007), Eq. 36. α = 80.5 is the primary setting; α = 20 and α = 321.9 are reported as sensitivity analyses. The attainable range and random expectation depend on α, library size and binder prevalence; the per-target random expectation at the primary α is given in `per_target_metrics.csv`.
+
+**Confidence intervals.** Two-sided 95% percentile intervals from 2,000 bootstrap resamples of the screened compounds within each target. These describe the precision of each target-level estimate and are not used to classify targets.
+
+**Hit recovery.** The fraction of targets for which the affinity-selection screen returned at least one compound meeting the binder criterion. This is a per-target measure of experimental ligandability and is independent of any model prediction.
+
+**Ranking accuracy.** Pearson's *r* between predicted score and experimental pKd over the experimental binder set only (minimum 10 binder pairs), where pKd = −log₁₀(Kd) with Kd in molar units. It derives from a separate prediction run to the virtual-screening metrics, which score binders against the full non-binder library.
 
 ---
 
@@ -86,12 +97,12 @@ EF@X% = (actives in top X% of ranked compounds) / (actives expected at random)
 ```bash
 pip install -r requirements.txt
 python scripts/reproduce_statistics.py
-python scripts/verify_druggability_statistics.py
+python scripts/verify_ligandability_statistics.py
 ```
 
-`reproduce_statistics.py` recomputes every correlation, group comparison and effect size reported for the virtual-screening analysis from the CSV files in `data/`, and prints them alongside the values stated in the text so that any discrepancy is visible.
+`reproduce_statistics.py` recomputes every correlation, group comparison and threshold analysis reported for the virtual-screening evaluation from the CSV files in `data/`, and prints each one alongside the value stated in the manuscript so that any discrepancy is immediately visible.
 
-`verify_druggability_statistics.py` does the same for the experimental druggability analysis: hit recovery by protein family and by structural fold, the Fisher exact test comparing GPCRs with accessible-cavity transporters, and the chi-square test across fold classes.
+`verify_ligandability_statistics.py` does the same for the experimental ligandability analysis: hit recovery by protein family and by mechanistic class, the Fisher exact test comparing GPCRs with accessible-cavity transporters, and the chi-square test across mechanistic classes.
 
 Note that these scripts reproduce the *statistics*, not the underlying predictions. Regenerating the per-target metrics themselves requires the per-compound experimental data and model predictions, which are available under the Data Use Agreement described above.
 
@@ -99,7 +110,7 @@ Note that these scripts reproduce the *statistics*, not the underlying predictio
 
 ## Calculation conditions
 
-`CALC_CONDITIONS.md` records the conditions under which the per-target metrics were generated, including the prediction runs used, the sign convention, and analyses that were performed and subsequently found not to hold. It is included for transparency about how the reported values were arrived at.
+`CALC_CONDITIONS.md` records the conditions under which the per-target metrics were generated, including the prediction runs used, the sign convention, the assay concentration range, and analyses that were performed and subsequently found not to hold. It is included for transparency about how the reported values were arrived at.
 
 ---
 
@@ -118,6 +129,7 @@ No registration, login, or data-use agreement is required to access any material
 - AlphaFold Protein Structure Database: https://alphafold.ebi.ac.uk
 - fpocket: https://github.com/Discngine/fpocket
 - P2Rank: https://github.com/rdk/p2rank
+- Binder2030 (PubChem-overlap subset): *SLAS Discov.* **39**, 100299 (2026)
 
 ---
 

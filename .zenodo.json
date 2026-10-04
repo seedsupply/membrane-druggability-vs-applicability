@@ -1,6 +1,6 @@
 {
   "upload_type": "software",
-  "title": "Data and analysis code for \"Defining the applicability domain of AI-based affinity prediction using experimentally standardized membrane-protein benchmarks\"",
+  "title": "Data and analysis code for \"Delineating the applicability domain of an AI affinity predictor using an experimentally standardized membrane-protein benchmark\"",
   "creators": [
     {
       "name": "Tarui, Naoki",
@@ -15,14 +15,14 @@
       "affiliation": "SEEDSUPPLY INC., Fujisawa, Kanagawa, Japan"
     }
   ],
-  "description": "Target-level aggregate data and analysis code supporting the manuscript \"Defining the applicability domain of AI-based affinity prediction using experimentally standardized membrane-protein benchmarks\". The archive contains per-target screening outcomes and fold classifications for 296 G protein-coupled receptors and 296 solute carrier transporters, per-target virtual-screening metrics and predicted-score distribution statistics for the 43 targets with complete compound-level binding data, structural descriptors, and the scripts that regenerate every reported statistic from these files. Per-compound data are not included and are not required to reproduce any reported result. Code is released under the MIT License; data are released under CC BY 4.0.",
+  "description": "Target-level aggregate data and analysis code supporting the manuscript \"Delineating the applicability domain of an AI affinity predictor using an experimentally standardized membrane-protein benchmark\". The archive contains per-target screening outcomes, structural classifications and structure-derived descriptors for 295 G protein-coupled receptors and 296 solute carrier transporters; consolidated virtual-screening metrics with bootstrap confidence intervals for the 43 targets with complete compound-level binding data; public-data proxies for representation in the model's training domain; measures of the consistency of model-generated ligand placements; held-out evaluations of the separation index; and the scripts that regenerate every reported statistic from these files. Per-compound data are not included and are not required to reproduce any reported statistical analysis, figure or table. Code is released under the MIT License; data are released under CC BY 4.0.",
   "access_right": "open",
   "license": "cc-by-4.0",
   "language": "eng",
   "keywords": [
     "applicability domain",
-    "binding affinity prediction",
     "virtual screening",
+    "AI affinity prediction",
     "benchmarking",
     "membrane proteins",
     "solute carrier transporters",

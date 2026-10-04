@@ -1,0 +1,297 @@
+protein,gene,uniprot,family,fold,mechanistic_class,n_binders,hit,subcellular_location,fpocket_druggability_score,fpocket_pockets_n,p2rank_top_score,plddt_mean
+SLC7A10,SLC7A10,Q9NS82,SLC7,APC,Accessible-cavity,15,Yes,Plasma membrane,0.973,35,8.9,83.8
+SLC7A1,SLC7A1,P30825,SLC7,APC,Accessible-cavity,13,Yes,Plasma membrane,0.752,45,12.28,82.1
+SLC7A11,SLC7A11,Q9UPY5,SLC7,APC,Accessible-cavity,12,Yes,Intracellular membrane,0.567,47,13,85.7
+SLC7A14,SLC7A14,Q8TBB6,SLC7,APC,Accessible-cavity,12,Yes,Intracellular membrane,0.837,54,11.99,72.7
+SLC38A3,SLC38A3,Q99624,SLC38,APC,Accessible-cavity,12,Yes,Plasma membrane,0.375,43,4.67,78.6
+SLC38A8,SLC38A8,A6NNN8,SLC38,APC,Accessible-cavity,12,Yes,Unknown/unclear,0.551,36,11.07,83.8
+SLC7A4,SLC7A4,O43246,SLC7,APC,Accessible-cavity,11,Yes,Unknown/unclear,0.666,39,9.47,80.9
+SLC38A5,SLC38A5,Q8WUX1,SLC38,APC,Accessible-cavity,11,Yes,Plasma membrane,0.803,36,7.45,80.1
+SLC38A10,SLC38A10,Q9HBR0,SLC38,APC,Accessible-cavity,11,Yes,Unknown/unclear,0.583,69,20.49,54.7
+SLC7A8,SLC7A8,Q9UHI5,SLC7,APC,Accessible-cavity,7,Yes,Plasma membrane,0.86,33,27.97,82.9
+SLC38A2,SLC38A2,Q96QD8,SLC38,APC,Accessible-cavity,7,Yes,Intracellular membrane,0.923,36,9.69,79.1
+SLC7A2,SLC7A2,P52569,SLC7,APC,Accessible-cavity,6,Yes,Plasma membrane,0.985,48,13.91,81.1
+SLC38A1,SLC38A1,Q9H2H9,SLC38,APC,Accessible-cavity,6,Yes,Plasma membrane,0.205,37,4.43,79.8
+SLC7A3,SLC7A3,Q8WY07,SLC7,APC,Accessible-cavity,5,Yes,Plasma membrane,0.761,52,11.83,83.5
+SLC38A9,SLC38A9,Q8NBW4,SLC38,APC,Accessible-cavity,4,Yes,Intracellular membrane,0.94,48,24.25,76.9
+SLC36A2,SLC36A2,Q495M3,SLC36,APC,Accessible-cavity,3,Yes,Intracellular membrane,0.969,31,7.63,84.3
+SLC7A7,SLC7A7,Q9UM01,SLC7,APC,Accessible-cavity,2,Yes,Plasma membrane,0.96,36,21.89,83.9
+SLC38A6,SLC38A6,Q8IZM9,SLC38,APC,Accessible-cavity,2,Yes,Plasma membrane,0.956,38,4.2,83.8
+SLC7A5,SLC7A5,Q01650,SLC7,APC,Accessible-cavity,0,No,Intracellular membrane,0.841,33,30.94,86.4
+SLC7A6,SLC7A6,Q92536,SLC7,APC,Accessible-cavity,0,No,Plasma membrane,0.89,35,15.67,83
+SLC7A9,SLC7A9,P82251,SLC7,APC,Accessible-cavity,0,No,Plasma membrane,0.684,29,7.16,85.3
+SLC7A13,SLC7A13,Q8TCU3,SLC7,APC,Accessible-cavity,0,No,Plasma membrane,0.79,35,42.79,88.1
+SLC36A1,SLC36A1,Q7Z2H8,SLC36,APC,Accessible-cavity,0,No,Intracellular membrane,0.82,37,8.44,84.9
+SLC36A4,SLC36A4,Q6YBV0,SLC36,APC,Accessible-cavity,0,No,Intracellular membrane,0.9,40,9.81,82.1
+SLC38A11,SLC38A11,Q08AI6,SLC38,APC,Accessible-cavity,0,No,Unknown/unclear,0.74,29,34.29,88.5
+SLC12A2,SLC12A2,P55011,SLC12,APC-like,Accessible-cavity,7,Yes,Plasma membrane,0.732,83,8.42,74.2
+SLC12A9,SLC12A9,Q9BXP2,SLC12,APC-like,Accessible-cavity,5,Yes,Intracellular membrane,0.751,63,15.77,82.2
+SLC12A4,SLC12A4,Q9UP95,SLC12,APC-like,Accessible-cavity,4,Yes,Plasma membrane,0.992,92,10.88,81.4
+SLC12A1,SLC12A1,Q13621,SLC12,APC-like,Accessible-cavity,0,No,Plasma membrane,0.905,94,8.15,78.4
+SLC42A3,RHCG,Q9UBD6,SLC42,Amt/Rh,Accessible-cavity,3,Yes,Plasma membrane,0.379,34,5,92.4
+SLC42A1,RHAG,Q02094,SLC42,Amt/Rh,Accessible-cavity,1,Yes,Unknown/unclear,0.945,27,6.63,95.4
+SLC30A1,SLC30A1,Q9Y6M5,SLC30,CDF,Accessible-cavity,12,Yes,Intracellular membrane,0.976,46,13.06,67.9
+SLC30A9,SLC30A9,Q6PML9,SLC30,CDF,Accessible-cavity,3,Yes,Mitochondrial membrane,0.919,50,4.52,75.1
+SLC30A3,SLC30A3,Q99726,SLC30,CDF,Accessible-cavity,2,Yes,Intracellular membrane,0.53,39,11.99,76.4
+SLC30A5,SLC30A5,Q8TAD4,SLC30,CDF,Accessible-cavity,1,Yes,Intracellular membrane,0.944,60,43.41,76.9
+SLC30A6,SLC30A6,Q6NXT4,SLC30,CDF,Accessible-cavity,0,No,Intracellular membrane,0.962,39,2.66,71.4
+SLC30A8,SLC30A8,Q8IWU4,SLC30,CDF,Accessible-cavity,0,No,Plasma membrane,0.929,21,8.42,81.8
+SLC9A9,SLC9A9,Q8IVB4,SLC9,CPA,Accessible-cavity,12,Yes,Intracellular membrane,0.986,59,23.81,73.5
+SLC9A6,SLC9A6,Q92581,SLC9,CPA,Accessible-cavity,10,Yes,Intracellular membrane,0.948,63,23.96,70.6
+SLC9A1,SLC9A1,P19634,SLC9,CPA,Accessible-cavity,3,Yes,Plasma membrane,0.937,72,20.96,67.9
+SLC9A8,SLC9A8,Q9Y2E8,SLC9,CPA,Accessible-cavity,3,Yes,Intracellular membrane,0.998,51,25.21,76
+SLC9A3,SLC9A3,P48764,SLC9,CPA,Accessible-cavity,2,Yes,Intracellular membrane,0.847,92,21.06,66
+SLC9A3R2,NHERF2,Q15599,SLC9,CPA,Accessible-cavity,1,Yes,Plasma membrane,0.122,31,1.98,69.4
+SLC9A2,SLC9A2,Q9UBY0,SLC9,CPA,Accessible-cavity,0,No,Plasma membrane,0.862,69,19.88,66.4
+SLC9A4,SLC9A4,Q6AI14,SLC9,CPA,Accessible-cavity,0,No,Plasma membrane,0.768,69,23.23,66.7
+SLC9A5,SLC9A5,Q14940,SLC9,CPA,Accessible-cavity,0,No,Intracellular membrane,0.963,75,18.17,64.3
+SLC9A7,SLC9A7,Q96T83,SLC9,CPA,Accessible-cavity,0,No,Intracellular membrane,0.894,65,27.06,67.5
+SLC44A1,SLC44A1,Q8WWI5,SLC44,Choline transporter-like,Accessible-cavity,2,Yes,Mitochondrial membrane,0.953,64,14.35,83.7
+SLC44A4,SLC44A4,Q53GD3,SLC44,Choline transporter-like,Accessible-cavity,1,Yes,Plasma membrane,0.818,59,7.52,83.8
+SLC44A3,SLC44A3,Q8N4M1,SLC44,Choline transporter-like,Accessible-cavity,0,No,Unknown/unclear,0.987,53,15.11,81.3
+SLC44A5,SLC44A5,Q8NCS7,SLC44,Choline transporter-like,Accessible-cavity,0,No,Plasma membrane,0.971,64,9.64,82.5
+SLC13A1,SLC13A1,Q9BZW2,SLC13,DASS,Accessible-cavity,1,Yes,Plasma membrane,0.926,41,12.12,81.9
+SLC13A2,SLC13A2,Q13183,SLC13,DASS,Accessible-cavity,1,Yes,Plasma membrane,0.724,38,10.76,83.4
+SLC13A3,SLC13A3,Q8WWT9,SLC13,DASS,Accessible-cavity,0,No,Plasma membrane,0.578,46,10.45,81.6
+SLC13A4,SLC13A4,Q9UKG4,SLC13,DASS,Accessible-cavity,0,No,Unknown/unclear,0.935,55,15.36,77.3
+SLC17A9,SLC17A9,Q9BYT1,SLC17,DASS-like/VGLUT,Accessible-cavity,14,Yes,Intracellular membrane,0.94,25,27.73,89.5
+SLC17A5,SLC17A5,Q9NRA2,SLC17,DASS-like/VGLUT,Accessible-cavity,12,Yes,Intracellular membrane,0.928,28,33.21,84.1
+SLC17A8,SLC17A8,Q8NDX2,SLC17,DASS-like/VGLUT,Accessible-cavity,12,Yes,Plasma membrane,0.766,49,29.42,77.8
+SLC17A4,SLC17A4,Q9Y2C5,SLC17,DASS-like/VGLUT,Accessible-cavity,1,Yes,Plasma membrane,0.715,40,39.64,83.9
+SLC17A1,SLC17A1,Q14916,SLC17,DASS-like/VGLUT,Accessible-cavity,0,No,Plasma membrane,0.891,25,54.93,86.5
+SLC17A2,SLC17A2,O00624,SLC17,DASS-like/VGLUT,Accessible-cavity,0,No,Plasma membrane,0.577,29,37.33,83.3
+SLC17A3,SLC17A3,O00476,SLC17,DASS-like/VGLUT,Accessible-cavity,0,No,Intracellular membrane,0.374,32,32.5,79.2
+SLC17A6,SLC17A6,Q9P2U8,SLC17,DASS-like/VGLUT,Accessible-cavity,0,No,Plasma membrane,0.955,40,27.99,78.1
+SLC40A1,SLC40A1,Q9NP59,SLC40,Ferroportin,Accessible-cavity,12,Yes,Plasma membrane,0.648,51,8.77,80.3
+SLC48A1,SLC48A1,Q6P1K1,SLC48,HRG/heme transporter,Accessible-cavity,12,Yes,Intracellular membrane,0.733,9,2.16,86.5
+SLC43A2,SLC43A2,Q8N370,SLC43,LAT-like,Accessible-cavity,12,Yes,Plasma membrane,0.39,48,34.54,79
+SLC43A3,SLC43A3,Q8NBI5,SLC43,LAT-like,Accessible-cavity,12,Yes,Plasma membrane,0.867,36,23.24,83.2
+SLC43A1,SLC43A1,O75387,SLC43,LAT-like,Accessible-cavity,8,Yes,Intracellular membrane,0.981,45,40.4,79.7
+SLC6A14,SLC6A14,Q9UN76,SLC6,LeuT,Accessible-cavity,17,Yes,Plasma membrane,0.629,34,29.9,89.5
+SLC6A2,SLC6A2,P23975,SLC6,LeuT,Accessible-cavity,12,Yes,Plasma membrane,0.486,37,33.11,87.5
+SLC6A3,SLC6A3,Q01959,SLC6,LeuT,Accessible-cavity,12,Yes,Plasma membrane,0.936,41,35.23,87.6
+SLC6A4,SLC6A4,P31645,SLC6,LeuT,Accessible-cavity,12,Yes,Intracellular membrane,0.965,42,35.34,85.4
+SLC6A7,SLC6A7,Q99884,SLC6,LeuT,Accessible-cavity,12,Yes,Plasma membrane,0.668,32,26.34,86.3
+SLC6A11,SLC6A11,P48066,SLC6,LeuT,Accessible-cavity,12,Yes,Plasma membrane,0.826,33,34.18,87.3
+SLC6A13,SLC6A13,Q9NSD5,SLC6,LeuT,Accessible-cavity,12,Yes,Plasma membrane,0.84,38,44.72,89.2
+SLC6A15,SLC6A15,Q9H2J7,SLC6,LeuT,Accessible-cavity,12,Yes,Unknown/unclear,0.928,41,25.8,80.1
+SLC6A6,SLC6A6,P31641,SLC6,LeuT,Accessible-cavity,10,Yes,Plasma membrane,0.903,43,40.06,87
+SLC6A12,SLC6A12,P48065,SLC6,LeuT,Accessible-cavity,10,Yes,Plasma membrane,0.704,33,37,88
+SLC6A9,SLC6A9,P48067,SLC6,LeuT,Accessible-cavity,9,Yes,Plasma membrane,0.69,48,20.63,82
+SLC6A17,SLC6A17,Q9H1V8,SLC6,LeuT,Accessible-cavity,7,Yes,Vesicle/synaptic vesicle,0.769,58,24.14,81.5
+SLC6A5,SLC6A5,Q9Y345,SLC6,LeuT,Accessible-cavity,5,Yes,Plasma membrane,0.714,48,21.79,74.6
+SLC6A20,SLC6A20,Q9NP91,SLC6,LeuT,Accessible-cavity,4,Yes,Plasma membrane,0.375,29,21.88,93.3
+SLC6A1,SLC6A1,P30531,SLC6,LeuT,Accessible-cavity,3,Yes,Plasma membrane,0.773,43,20.42,88.6
+SLC6A8,SLC6A8,P48029,SLC6,LeuT,Accessible-cavity,3,Yes,Plasma membrane,0.63,39,25.49,85.6
+SLC6A18,SLC6A18,Q96N87,SLC6,LeuT,Accessible-cavity,0,No,Unknown/unclear,0.554,42,19.3,90.6
+SLC5A5,SLC5A5,Q92911,SLC5,LeuT-like,Accessible-cavity,12,Yes,Plasma membrane,0.69,37,4.16,81.5
+SLC5A6,SLC5A6,Q9Y289,SLC5,LeuT-like,Accessible-cavity,12,Yes,Plasma membrane,0.497,39,20.23,80
+SLC5A7,SLC5A7,Q9GZV3,SLC5,LeuT-like,Accessible-cavity,12,Yes,Intracellular membrane,0.971,38,20.91,84.3
+SLC5A8,SLC5A8,Q8N695,SLC5,LeuT-like,Accessible-cavity,12,Yes,Plasma membrane,0.943,42,18.78,85.6
+SLC5A12,SLC5A12,Q1EHB4,SLC5,LeuT-like,Accessible-cavity,12,Yes,Plasma membrane,0.965,34,25.72,85
+SLC5A4,SLC5A4,Q9NY91,SLC5,LeuT-like,Accessible-cavity,7,Yes,Plasma membrane,0.674,50,13.89,85.3
+SLC5A1,SLC5A1,P13866,SLC5,LeuT-like,Accessible-cavity,1,Yes,Plasma membrane,0.632,53,14.27,84.5
+SLC5A3,SLC5A3,P53794,SLC5,LeuT-like,Accessible-cavity,1,Yes,Plasma membrane,0.978,57,9.92,78.7
+SLC5A2,SLC5A2,P31639,SLC5,LeuT-like,Accessible-cavity,0,No,Plasma membrane,0.897,48,16.86,84.3
+SLC5A9,SLC5A9,Q2M3M2,SLC5,LeuT-like,Accessible-cavity,0,No,Plasma membrane,0.927,40,20.91,83.5
+SLC5A10,SLC5A10,A0PJK1,SLC5,LeuT-like,Accessible-cavity,0,No,Plasma membrane,0.832,43,18.74,88.2
+SLC11A1,SLC11A1,P49279,SLC11,LeuT-like,Accessible-cavity,0,No,Intracellular membrane,0.994,36,7.13,83.3
+SLC11A2,SLC11A2,P49281,SLC11,LeuT-like,Accessible-cavity,0,No,Mitochondrial membrane,0.802,46,9.37,80.8
+SLC47A1,SLC47A1,Q96FL8,SLC47,MATE,Accessible-cavity,11,Yes,Plasma membrane,0.979,34,62.44,85.9
+SLC47A2,SLC47A2,Q86VL8,SLC47,MATE,Accessible-cavity,1,Yes,Plasma membrane,0.825,42,20.35,82.1
+SLC18B1,SLC18B1,Q6NT16,SLC18,MFS,Accessible-cavity,279,Yes,Vesicle/synaptic vesicle,0.882,18,75.16,84.9
+SLC2A1,SLC2A1,P11166,SLC2,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.773,34,28.32,90.3
+SLC2A3,SLC2A3,P11169,SLC2,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.739,33,21.24,90.4
+SLC2A6,SLC2A6,Q9UGQ3,SLC2,MFS,Accessible-cavity,12,Yes,Intracellular membrane,0.721,33,8.21,81.7
+SLC2A7,SLC2A7,Q6PXP3,SLC2,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.558,32,19.97,87.9
+SLC2A8,SLC2A8,Q9NY64,SLC2,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.738,40,26.03,85.8
+SLC2A9,SLC2A9,Q9NRM0,SLC2,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.959,38,51.58,82.8
+SLC16A2,SLC16A2,P36021,SLC16,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.966,36,44,79.5
+SLC16A6,SLC16A6,O15403,SLC16,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.946,42,40.1,76.1
+SLC16A7,SLC16A7,O60669,SLC16,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.994,34,27.91,84.4
+SLC16A10,SLC16A10,Q8TF71,SLC16,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.721,34,34.72,82.6
+SLC16A14,SLC16A14,Q7RTX9,SLC16,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.855,32,49.29,79.8
+SLC18A2,SLC18A2,Q05940,SLC18,MFS,Accessible-cavity,12,Yes,Intracellular membrane,0.803,34,10.04,77.3
+SLC18A3,SLC18A3,Q16572,SLC18,MFS,Accessible-cavity,12,Yes,Vesicle/synaptic vesicle,0.999,32,54.32,75.9
+SLC19A1,SLC19A1,P41440,SLC19,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.634,43,20.42,73.3
+SLC19A3,SLC19A3,Q9BZV2,SLC19,MFS,Accessible-cavity,12,Yes,Unknown/unclear,0.274,31,47.5,82
+SLC22A2,SLC22A2,O15244,SLC22,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.909,39,44.75,83
+SLC22A6,SLC22A6,Q4U2R8,SLC22,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.965,50,35.33,83.1
+SLC29A2,SLC29A2,Q14542,SLC29,MFS,Accessible-cavity,12,Yes,Plasma membrane,0.782,24,42.64,84.5
+SLC22A1,SLC22A1,O15245,SLC22,MFS,Accessible-cavity,11,Yes,Plasma membrane,0.973,40,53.9,84.4
+SLC22A4,SLC22A4,Q9H015,SLC22,MFS,Accessible-cavity,11,Yes,Mitochondrial membrane,0.558,36,47.57,85.1
+SLC2A4,SLC2A4,P14672,SLC2,MFS,Accessible-cavity,10,Yes,Plasma membrane,0.585,34,28.61,88.1
+SLC2A12,SLC2A12,Q8TD20,SLC2,MFS,Accessible-cavity,10,Yes,Plasma membrane,0.832,45,22.24,74.5
+SLC22A16,SLC22A16,Q86VW1,SLC22,MFS,Accessible-cavity,10,Yes,Plasma membrane,0.814,46,34.25,85.2
+SLC22B3,SV2C,Q496J9,SLC22,MFS,Accessible-cavity,10,Yes,Vesicle/synaptic vesicle,0.745,59,39.07,78
+SLC29A3,SLC29A3,Q9BZD2,SLC29,MFS,Accessible-cavity,10,Yes,Mitochondrial membrane,0.728,43,50.7,82.4
+SLC16A1,SLC16A1,P53985,SLC16,MFS,Accessible-cavity,8,Yes,Plasma membrane,0.982,35,26.26,83.3
+SLC22A11,SLC22A11,Q9NSA0,SLC22,MFS,Accessible-cavity,8,Yes,Plasma membrane,0.968,39,35.86,87.7
+SLC22A12,SLC22A12,Q96S37,SLC22,MFS,Accessible-cavity,8,Yes,Plasma membrane,0.955,39,41.65,86.8
+SLC29A1,SLC29A1,Q99808,SLC29,MFS,Accessible-cavity,8,Yes,Plasma membrane,0.853,38,47.24,87.8
+SLC2A11,SLC2A11,Q9BYW1,SLC2,MFS,Accessible-cavity,7,Yes,Plasma membrane,0.994,33,31.85,88.1
+SLC22A9,SLC22A9,Q8IVM8,SLC22,MFS,Accessible-cavity,7,Yes,Plasma membrane,0.63,51,37.18,85.6
+SLC2A2,SLC2A2,P11168,SLC2,MFS,Accessible-cavity,6,Yes,Plasma membrane,0.8,35,32.5,86.6
+SLC2A5,SLC2A5,P22732,SLC2,MFS,Accessible-cavity,5,Yes,Plasma membrane,0.98,35,13.69,90.3
+SLC16A9,SLC16A9,Q7RTY1,SLC16,MFS,Accessible-cavity,4,Yes,Plasma membrane,0.892,37,48.61,76.7
+SLC22A8,SLC22A8,Q8TCC7,SLC22,MFS,Accessible-cavity,3,Yes,Plasma membrane,0.753,38,31.51,86.1
+SLC2A14,SLC2A14,Q8TDB8,SLC2,MFS,Accessible-cavity,2,Yes,Plasma membrane,0.876,35,29.09,87.7
+SLC2A10,SLC2A10,O95528,SLC2,MFS,Accessible-cavity,1,Yes,Unknown/unclear,0.911,41,29.3,74.8
+SLC16A13,SLC16A13,Q7RTY0,SLC16,MFS,Accessible-cavity,1,Yes,Intracellular membrane,0.927,23,39.39,87.2
+SLC16A3,SLC16A3,O15427,SLC16,MFS,Accessible-cavity,0,No,Plasma membrane,0.957,25,16.17,83.6
+SLC16A5,SLC16A5,O15375,SLC16,MFS,Accessible-cavity,0,No,Plasma membrane,0.661,32,30.84,80.6
+SLC16A8,SLC16A8,O95907,SLC16,MFS,Accessible-cavity,0,No,Plasma membrane,0.902,21,27.78,77.4
+SLC16A11,SLC16A11,Q8NCK7,SLC16,MFS,Accessible-cavity,0,No,Intracellular membrane,0.901,34,31.12,83.4
+SLC18A1,SLC18A1,P54219,SLC18,MFS,Accessible-cavity,0,No,Intracellular membrane,0.423,30,13.1,76.9
+SLC22A5,SLC22A5,O76082,SLC22,MFS,Accessible-cavity,0,No,Intracellular membrane,0.996,41,44.89,86.5
+SLC22A7,SLC22A7,Q9Y694,SLC22,MFS,Accessible-cavity,0,No,Plasma membrane,0.982,41,37.98,84.9
+SLC22A10,SLC22A10,Q63ZE4,SLC22,MFS,Accessible-cavity,0,No,Unknown/unclear,0.895,45,22.24,87.5
+SLC22A14,SLC22A14,Q9Y267,SLC22,MFS,Accessible-cavity,0,No,Mitochondrial membrane,1,46,75.52,81
+SLC22A15,SLC22A15,Q8IZD6,SLC22,MFS,Accessible-cavity,0,No,Plasma membrane,0.912,35,35.55,83
+SLC22A18,SLC22A18,Q96BI1,SLC22,MFS,Accessible-cavity,0,No,Plasma membrane,0.778,27,19.37,86.9
+SLC22A20,SLC22A20,A6NK97,SLC22,MFS,Accessible-cavity,0,No,Unknown/unclear,0.722,43,38.59,85.9
+SLC22A24,SLC22A24,Q8N4F4,SLC22,MFS,Accessible-cavity,0,No,Plasma membrane,0.626,44,26.11,87.6
+SLC22A25,SLC22A25,Q6T423,SLC22,MFS,Accessible-cavity,0,No,Unknown/unclear,0.501,43,32.9,87.9
+SLCO1A2,SLCO1A2,P46721,SLCO1,OATP,Accessible-cavity,9,Yes,Plasma membrane,0.881,57,84.03,80
+SLCO1B3,SLCO1B3,Q9NPD5,SLCO1,OATP,Accessible-cavity,3,Yes,Plasma membrane,0.977,53,24.85,79.2
+SLCO3A1,SLCO3A1,Q9UIG8,SLCO3,OATP,Accessible-cavity,3,Yes,Plasma membrane,0.983,55,44.98,75.2
+SLCO4A1,SLCO4A1,Q96BD0,SLCO4,OATP,Accessible-cavity,3,Yes,Plasma membrane,0.999,51,54.36,78.1
+SLCO1B1,SLCO1B1,Q9Y6L6,SLCO1,OATP,Accessible-cavity,0,No,Plasma membrane,0.993,51,25.41,80.4
+SLCO2A1,SLCO2A1,Q92959,SLCO2,OATP,Accessible-cavity,0,No,Intracellular membrane,0.942,48,41.78,82.3
+SLCO2B1,SLCO2B1,O94956,SLCO2,OATP,Accessible-cavity,0,No,Plasma membrane,0.976,41,64.3,78.6
+SLCO4C1,SLCO4C1,Q6ZQN7,SLCO4,OATP,Accessible-cavity,0,No,Plasma membrane,0.413,43,42.13,78.7
+SLCO6A1,SLCO6A1,Q86UG4,SLCO6,OATP,Accessible-cavity,0,No,Plasma membrane,0.964,54,23.09,76.6
+SLC46A3,SLC46A3,Q7Z3Q1,SLC46,PCFT/heme transporter,Accessible-cavity,10,Yes,Intracellular membrane,0.677,34,34.42,86.8
+SLC46A1,SLC46A1,Q96NT5,SLC46,PCFT/heme transporter,Accessible-cavity,7,Yes,Intracellular membrane,0.96,30,47.82,82.9
+SLC46A2,SLC46A2,Q9BY10,SLC46,PCFT/heme transporter,Accessible-cavity,0,No,Intracellular membrane,0.887,32,50.1,80.7
+SLC15A1,SLC15A1,P46059,SLC15,POT/PepT,Accessible-cavity,12,Yes,Plasma membrane,0.924,55,22.6,87
+SLC15A3,SLC15A3,Q8IY34,SLC15,POT/PepT,Accessible-cavity,12,Yes,Intracellular membrane,0.747,42,38.06,80.9
+SLC15A4,SLC15A4,Q8N697,SLC15,POT/PepT,Accessible-cavity,12,Yes,Intracellular membrane,0.946,44,23.32,85.3
+SLC15A2,SLC15A2,Q16348,SLC15,POT/PepT,Accessible-cavity,7,Yes,Plasma membrane,0.478,53,25.88,84.2
+SLC39A14,SLC39A14,Q15043,SLC39,ZIP,Accessible-cavity,33,Yes,Intracellular membrane,0.778,40,12.59,73.6
+SLC39A2,SLC39A2,Q9NP94,SLC39,ZIP,Accessible-cavity,12,Yes,Plasma membrane,0.076,24,2.23,82.5
+SLC39A8,SLC39A8,Q9C0K1,SLC39,ZIP,Accessible-cavity,12,Yes,Intracellular membrane,0.43,38,8.97,73.5
+SLC39A5,SLC39A5,Q6ZMH5,SLC39,ZIP,Accessible-cavity,11,Yes,Plasma membrane,0.913,42,6.83,67.2
+SLC39A4,SLC39A4,Q6P5W5,SLC39,ZIP,Accessible-cavity,7,Yes,Intracellular membrane,0.941,51,17.75,75
+SLC39A6,SLC39A6,Q13433,SLC39,ZIP,Accessible-cavity,6,Yes,Plasma membrane,0.698,61,20.07,60
+SLC39A10,SLC39A10,Q9ULF5,SLC39,ZIP,Accessible-cavity,3,Yes,Plasma membrane,0.913,62,3.57,58.4
+SLC39A7,SLC39A7,Q92504,SLC39,ZIP,Accessible-cavity,2,Yes,Intracellular membrane,0.983,30,20.54,65.9
+SLC39A1,SLC39A1,Q9NY26,SLC39,ZIP,Accessible-cavity,0,No,Intracellular membrane,0.594,24,1.7,80.5
+SLC39A3,SLC39A3,Q9BRY0,SLC39,ZIP,Accessible-cavity,0,No,Plasma membrane,0.532,25,3.27,81.3
+SLC39A11,SLC39A11,Q8N1S5,SLC39,ZIP,Accessible-cavity,0,No,Intracellular membrane,0.92,21,9.67,76.6
+SLC39A13,SLC39A13,Q96H72,SLC39,ZIP,Accessible-cavity,0,No,Intracellular membrane,0.995,33,4.34,76.3
+SLC33A1,SLC33A1,O00400,SLC33,Acetyl-CoA transporter,Compact gated,9,Yes,Intracellular membrane,0.165,36,44.83,82.8
+SLC27A2,SLC27A2,O14975,SLC27,FATP,Compact gated,40,Yes,Intracellular membrane,0.057,45,47.26,92.4
+SLC27A1,SLC27A1,Q6PCB7,SLC27,FATP,Compact gated,12,Yes,Plasma membrane,0.996,44,55.4,91.2
+SLC27A4,SLC27A4,Q6P1M0,SLC27,FATP,Compact gated,11,Yes,Intracellular membrane,0.839,36,43.34,90.7
+SLC27A3,SLC27A3,Q5K4L6,SLC27,FATP,Compact gated,0,No,Mitochondrial membrane,0.595,55,33.36,86.9
+SLC27A5,SLC27A5,Q9Y2P5,SLC27,FATP,Compact gated,0,No,Intracellular membrane,0.779,58,31.79,86.3
+SLC27A6,SLC27A6,Q9Y2P4,SLC27,FATP,Compact gated,0,No,Plasma membrane,0.492,43,36,91
+SLC41A2,SLC41A2,Q96JW4,SLC41,MgtE-like,Compact gated,3,Yes,Plasma membrane,0.723,53,7.92,72.7
+SLC41A3,SLC41A3,Q96GZ6,SLC41,MgtE-like,Compact gated,0,No,Mitochondrial membrane,0.888,29,7.39,79.1
+SLC25A20,SLC25A20,O43772,SLC25,Mitochondrial carrier,Compact gated,9,Yes,Mitochondrial membrane,0.922,25,63.16,89
+SLC25A13,SLC25A13,Q9UJS0,SLC25,Mitochondrial carrier,Compact gated,7,Yes,Mitochondrial membrane,0.758,57,47.34,83.1
+SLC25A21,SLC25A21,Q9BQT8,SLC25,Mitochondrial carrier,Compact gated,5,Yes,Mitochondrial membrane,0.618,20,39.94,88.9
+SLC25A7,UCP1,P25874,SLC25,Mitochondrial carrier,Compact gated,4,Yes,Mitochondrial membrane,0.833,22,15.2,76.5
+SLC25A25,SLC25A25,Q6KCM7,SLC25,Mitochondrial carrier,Compact gated,3,Yes,Mitochondrial membrane,0.791,34,15.6,73.7
+SLC25A40,SLC25A40,Q8TBP6,SLC25,Mitochondrial carrier,Compact gated,2,Yes,Mitochondrial membrane,0.79,34,19.65,78.2
+SLC25A5,SLC25A5,P05141,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.585,18,10.05,91.8
+SLC25A11,SLC25A11,Q02978,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.747,21,21.54,87.5
+SLC25A16,SLC25A16,P16260,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.91,17,20.13,85.1
+SLC25A18,SLC25A18,Q9H1K4,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.499,26,30.45,73.2
+SLC25A22,SLC25A22,Q9H936,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.733,31,33.35,78.5
+SLC25A28,SLC25A28,Q96A46,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.747,29,69.83,74.3
+SLC25A31,SLC25A31,Q9H0C2,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.728,25,9.37,90
+SLC25A36,SLC25A36,Q96CQ1,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.818,22,19.43,87
+SLC25A44,SLC25A44,Q96H78,SLC25,Mitochondrial carrier,Compact gated,1,Yes,Mitochondrial membrane,0.222,28,12.49,80.7
+SLC25A1,SLC25A1,P53007,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.974,29,12.92,75.1
+SLC25A2,SLC25A2,Q9BXI2,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.334,29,19.93,88.4
+SLC25A3,SLC25A3,Q00325,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.891,26,15.05,80.1
+SLC25A6,SLC25A6,P12236,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.547,21,7.97,92.4
+SLC25A10,SLC25A10,Q9UBX3,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.895,24,19.43,77.5
+SLC25A12,SLC25A12,O75746,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.807,47,44.83,83.5
+SLC25A17,SLC25A17,O43808,SLC25,Mitochondrial carrier,Compact gated,0,No,Unknown/unclear,0.866,18,19.06,85.3
+SLC25A19,SLC25A19,Q9HC21,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.067,33,16.29,85.2
+SLC25A23,SLC25A23,Q9BV35,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.355,45,15.54,78.9
+SLC25A26,SLC25A26,Q70HW3,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.89,18,14.92,88
+SLC25A30,SLC25A30,Q5SVS4,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.504,24,14.19,80.4
+SLC25A32,SLC25A32,Q9H2D1,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.692,31,18.09,85.6
+SLC25A34,SLC25A34,Q6PIV7,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.579,24,24.52,84.8
+SLC25A38,SLC25A38,Q96DW6,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.757,25,19.67,82.9
+SLC25A39,SLC25A39,Q9BZJ4,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.564,33,23.45,73.8
+SLC25A41,SLC25A41,Q8N5S1,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.912,38,18.16,73.1
+SLC25A42,SLC25A42,Q86VD7,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.366,27,5.99,90.9
+SLC25A43,SLC25A43,Q8WUT9,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.543,28,13.63,88.8
+SLC25A45,SLC25A45,Q8N413,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.885,18,13.1,80.2
+SLC25A46,SLC25A46,Q96AG3,SLC25,Mitochondrial carrier,Compact gated,0,No,Mitochondrial membrane,0.739,44,25.98,74.6
+SLC35A1,SLC35A1,P78382,SLC35,Nucleotide-sugar transporter,Compact gated,10,Yes,Intracellular membrane,0.663,27,43.35,88.3
+SLC35H1 (SLC35C2),SLC35H1,Q9NQQ7,SLC35,Nucleotide-sugar transporter,Compact gated,10,Yes,Intracellular membrane,0.589,29,53.47,83
+SLC35A5,SLC35A5,Q9BS91,SLC35,Nucleotide-sugar transporter,Compact gated,4,Yes,Intracellular membrane,0.912,41,25.46,76.5
+SLC35B4,SLC35B4,Q969S0,SLC35,Nucleotide-sugar transporter,Compact gated,4,Yes,Intracellular membrane,0.565,28,22.52,86.7
+SLC35D1,SLC35D1,Q9NTN3,SLC35,Nucleotide-sugar transporter,Compact gated,1,Yes,Intracellular membrane,0.764,26,27.4,81
+SLC35A2,SLC35A2,P78381,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.795,24,27.71,80.6
+SLC35A3,SLC35A3,Q9Y2D2,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.87,18,27.23,89.3
+SLC35A4,SLC35A4,Q96G79,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.223,20,28.85,85
+SLC35B1,SLC35B1,P78383,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.837,19,32.03,86.6
+SLC35B2,SLC35B2,Q8TB61,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.821,48,22.5,81.3
+SLC35C1,SLC35C1,Q96A29,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.816,39,29.19,82.4
+SLC35D2,SLC35D2,Q76EJ3,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Intracellular membrane,0.941,19,21.57,85.6
+SLC35F4,SLC35F4,A4IF30,SLC35,Nucleotide-sugar transporter,Compact gated,0,No,Unknown/unclear,0.977,39,30.78,67.2
+SLC52A1,SLC52A1,Q9NWF4,SLC52,Riboflavin transporter,Compact gated,12,Yes,Plasma membrane,0.893,32,24.02,84.1
+SLC52A2,SLC52A2,Q9HAB3,SLC52,Riboflavin transporter,Compact gated,12,Yes,Plasma membrane,0.647,27,27.68,84.5
+SLC52A3,SLC52A3,Q9NQ40,SLC52,Riboflavin transporter,Compact gated,12,Yes,Plasma membrane,0.828,25,34,80.6
+SLC50A1,SLC50A1,Q9BRV3,SLC50,SWEET,Compact gated,12,Yes,Intracellular membrane,0.919,14,32.99,90
+SLC37A3,SLC37A3,Q8NCC5,SLC37,Sugar-phosphate exchanger,Compact gated,3,Yes,Intracellular membrane,0.602,36,10.97,84.1
+SLC37A1,SLC37A1,P57057,SLC37,Sugar-phosphate exchanger,Compact gated,0,No,Intracellular membrane,0.335,38,6.93,79.6
+SLC37A2,SLC37A2,Q8TED4,SLC37,Sugar-phosphate exchanger,Compact gated,0,No,Intracellular membrane,0.463,29,4.42,84.1
+SLC37A4,SLC37A4,O43826,SLC37,Sugar-phosphate exchanger,Compact gated,0,No,Intracellular membrane,0.618,33,29.94,85.9
+SLC32A1,SLC32A1,Q9H598,SLC32,VNUT/VIAAT,Compact gated,0,No,Unknown/unclear,0.783,28,15.04,78.7
+SLC10A1,SLC10A1,Q14973,SLC10,ASBT/NTCP,Elevator-like,6,Yes,Plasma membrane,0.944,27,5.28,83.8
+SLC10A6,SLC10A6,Q3KNW5,SLC10,ASBT/NTCP,Elevator-like,6,Yes,Unknown/unclear,0.967,28,4.47,77.9
+SLC10A7,SLC10A7,Q0GE19,SLC10,ASBT/NTCP,Elevator-like,3,Yes,Intracellular membrane,0.72,28,15.71,85.2
+SLC10A4,SLC10A4,Q96EP9,SLC10,ASBT/NTCP,Elevator-like,2,Yes,Plasma membrane,0.968,23,13.43,71.4
+SLC10A5,SLC10A5,Q5PT55,SLC10,ASBT/NTCP,Elevator-like,2,Yes,Unknown/unclear,0.995,31,50.97,79.9
+SLC10A2,SLC10A2,Q12908,SLC10,ASBT/NTCP,Elevator-like,0,No,Unknown/unclear,0.215,19,10.42,82.9
+SLC10A3,SLC10A3,P09131,SLC10,ASBT/NTCP,Elevator-like,0,No,Unknown/unclear,0.984,32,32.05,77.4
+SLC4A1,SLC4A1,P02730,SLC4,Bicarbonate transporter,Elevator-like,12,Yes,Plasma membrane,0.981,71,19.44,82.5
+SLC4A8,SLC4A8,Q2Y0W8,SLC4,Bicarbonate transporter,Elevator-like,1,Yes,Plasma membrane,0.866,85,13.12,72.7
+SLC4A2,SLC4A2,P04920,SLC4,Bicarbonate transporter,Elevator-like,0,No,Plasma membrane,0.519,101,23.65,66.7
+SLC4A5,SLC4A5,Q9BY07,SLC4,Bicarbonate transporter,Elevator-like,0,No,Plasma membrane,0.912,97,19.12,69.3
+SLC4A9,SLC4A9,Q96Q91,SLC4,Bicarbonate transporter,Elevator-like,0,No,Plasma membrane,0.811,66,17.82,72.5
+SLC4A10,SLC4A10,Q6U841,SLC4,Bicarbonate transporter,Elevator-like,0,No,Plasma membrane,0.891,95,13.61,71.4
+SLC4A11,SLC4A11,Q8NBS3,SLC4,Bicarbonate transporter,Elevator-like,0,No,Plasma membrane,0.869,83,14.58,74.4
+SLC1A1,SLC1A1,P43005,SLC1,Elevator,Elevator-like,1,Yes,Intracellular membrane,0.807,39,6.23,80.1
+SLC1A2,SLC1A2,P43004,SLC1,Elevator,Elevator-like,0,No,Plasma membrane,0.935,48,10.6,77.6
+SLC1A3,SLC1A3,P43003,SLC1,Elevator,Elevator-like,0,No,Plasma membrane,0.97,47,4.83,81.9
+SLC1A5,SLC1A5,Q15758,SLC1,Elevator,Elevator-like,0,No,Plasma membrane,0.873,39,7.07,78.9
+SLC34A1,SLC34A1,Q06495,SLC34,NaPi-II,Elevator-like,0,No,Plasma membrane,0.856,39,6.99,72.2
+SLC34A2,SLC34A2,O95436,SLC34,NaPi-II,Elevator-like,0,No,Plasma membrane,0.83,60,9.35,73.3
+SLC23A2,SLC23A2,Q9UGH3,SLC23,Nucleobase-ascorbate,Elevator-like,6,Yes,Plasma membrane,0.97,52,7.79,77.7
+SLC23A1,SLC23A1,Q9UHI7,SLC23,Nucleobase-ascorbate,Elevator-like,0,No,Plasma membrane,0.969,36,9.36,81.7
+SLC23A3,SLC23A3,Q6PIS1,SLC23,Nucleobase-ascorbate,Elevator-like,0,No,Unknown/unclear,0.849,41,18.89,75.8
+SLC20A1,SLC20A1,Q8WUM9,SLC20,PiT,Elevator-like,1,Yes,Plasma membrane,1,53,16.39,70
+SLC20A2,SLC20A2,Q08357,SLC20,PiT,Elevator-like,1,Yes,Plasma membrane,0.995,50,13.87,72.6
+SLC26A9,SLC26A9,Q7LBE3,SLC26,SLC26 fold,Elevator-like,12,Yes,Plasma membrane,0.862,70,12.4,79.9
+SLC26A8,SLC26A8,Q96RN1,SLC26,SLC26 fold,Elevator-like,2,Yes,Unknown/unclear,0.743,71,11.83,68.4
+SLC26A3,SLC26A3,P40879,SLC26,SLC26 fold,Elevator-like,0,No,Plasma membrane,0.585,68,8.29,84.9
+SLC26A4,SLC26A4,O43511,SLC26,SLC26 fold,Elevator-like,0,No,Plasma membrane,0.946,73,3.36,82.7
+SLC26A5,SLC26A5,P58743,SLC26,SLC26 fold,Elevator-like,0,No,Plasma membrane,0.705,57,13.42,83.9
+SLC26A6,SLC26A6,Q9BXS9,SLC26,SLC26 fold,Elevator-like,0,No,Plasma membrane,0.997,55,12.11,82.4
+SLC26A11,SLC26A11,Q86WA9,SLC26,SLC26 fold,Elevator-like,0,No,Intracellular membrane,0.405,42,22.3,86.7
+SLC45A2,SLC45A2,Q9UMX9,SLC45,Sugar transporter-like,Elevator-like,1,Yes,Unknown/unclear,0.752,41,48.11,78
+SLC45A1,SLC45A1,Q9Y2W3,SLC45,Sugar transporter-like,Elevator-like,0,No,Unknown/unclear,0.963,49,56.08,66.3
+SLC45A4,SLC45A4,Q5BKX6,SLC45,Sugar transporter-like,Elevator-like,0,No,Plasma membrane,0.961,49,47.97,65.7
+SLC14A1,SLC14A1,Q13336,SLC14,Urea transporter,Elevator-like,12,Yes,Plasma membrane,0.615,21,21.75,92.9
+SLC28A1,SLC28A1,O00337,SLC28,CNT,Ion channel-like,0,No,Plasma membrane,0.97,50,17.68,81.9
+SLC28A2,SLC28A2,O43868,SLC28,CNT,Ion channel-like,0,No,Plasma membrane,0.974,54,15.94,82.1
+SLC28A3,SLC28A3,Q9HAS3,SLC28,CNT,Ion channel-like,0,No,Intracellular membrane,0.83,52,17.26,80.3
+SLC31A1,SLC31A1,O15431,SLC31,Copper transporter,Ion channel-like,0,No,Intracellular membrane,0.229,11,1.47,70.5
+SLC31A2,SLC31A2,O15432,SLC31,Copper transporter,Ion channel-like,0,No,Intracellular membrane,0.856,18,5.19,72
+SLC3A1,SLC3A1,Q07837,SLC3,Heavy-chain glycoprotein,Ion channel-like,0,No,Plasma membrane,0.237,50,20.12,87.5
+SLC24A2,SLC24A2,Q9UI40,SLC24,NCKX,Ion channel-like,0,No,Plasma membrane,0.978,64,13.24,67.8
+SLC24A3,SLC24A3,Q9HC58,SLC24,NCKX,Ion channel-like,0,No,Plasma membrane,0.458,65,31.35,70.3
+SLC24A4,SLC24A4,Q8NFF2,SLC24,NCKX,Ion channel-like,0,No,Plasma membrane,0.842,60,10.78,70.8
+SLC24A5,SLC24A5,Q71RS6,SLC24,NCKX,Ion channel-like,0,No,Intracellular membrane,0.769,37,10.54,76.6
+SLC8A3,SLC8A3,P57103,SLC8,NCX,Ion channel-like,12,Yes,Mitochondrial membrane,0.999,65,38.6,76.9
+SLC8A1,SLC8A1,P32418,SLC8,NCX,Ion channel-like,9,Yes,Plasma membrane,0.994,74,7.04,74.6
+SLC8B1,SLC8B1,Q6J4K2,SLC8,NCX,Ion channel-like,0,No,Mitochondrial membrane,0.493,56,15.13,80.9

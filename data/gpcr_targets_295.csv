@@ -1,0 +1,296 @@
+gene,uniprot,cwxp_status,x_residue_type,x_residue,n_binders,hit
+ACKR1,Q16570,CWxP(-),,,4,Yes
+ACKR2,O00590,CWxP(-),,,4,Yes
+ACKR3,P25106,CWxP(+),aliphatic x,L,1,Yes
+ACKR4,Q9NPB9,CWxP(-),,,5,Yes
+ADCYAP1R1,P41586,CWxP(+),other x,K,0,No
+ADGRD2,Q7Z7M1,CWxP(-),,,4,Yes
+ADGRE1,Q14246,CWxP(-),,,4,Yes
+ADGRE2,Q9UHX3,CWxP(-),,,9,Yes
+ADGRE5,P48960,CWxP(-),,,12,Yes
+ADGRF1,Q5T601,CWxP(-),,,6,Yes
+ADGRF2P,Q8IZF7,CWxP(-),,,5,Yes
+ADGRF3,Q8IZF5,CWxP(-),,,1,Yes
+ADGRG2,Q8IZP9,CWxP(-),,,7,Yes
+ADGRG6,Q86SQ4,CWxP(-),,,9,Yes
+ADGRL1,O94910,CWxP(-),,,1,Yes
+ADGRL2,O95490,CWxP(-),,,0,No
+ADGRL3,Q9HAR2,CWxP(-),,,2,Yes
+ADGRL4,Q9HBW9,CWxP(-),,,1,Yes
+ADORA1,P30542,CWxP(-),,,24,Yes
+ADORA2A,P29274,CWxP(+),aliphatic x,L,12,Yes
+ADORA2B,P29275,CWxP(+),aliphatic x,L,12,Yes
+ADORA3,P0DMS8,CWxP(-),,,12,Yes
+ADRA1A,P35348,CWxP(+),aliphatic x,L,12,Yes
+ADRA1B,P35368,CWxP(+),aliphatic x,L,11,Yes
+ADRA2A,P08913,CWxP(+),non-aliphatic x,F,12,Yes
+ADRA2B,P18089,CWxP(+),non-aliphatic x,F,21,Yes
+ADRA2C,P18825,CWxP(+),non-aliphatic x,F,0,No
+ADRB1,P08588,CWxP(+),aliphatic x,L,12,Yes
+ADRB2,P07550,CWxP(+),aliphatic x,L,12,Yes
+ADRB3,P13945,CWxP(+),aliphatic x,L,0,No
+AGTR1,P30556,CWxP(-),,,23,Yes
+AGTR2,P50052,CWxP(+),aliphatic x,L,6,Yes
+AVPR1A,P37288,CWxP(+),aliphatic x,A,7,Yes
+AVPR1B,P47901,CWxP(+),aliphatic x,A,4,Yes
+BAI2,O60241,CWxP(-),,,0,No
+BAI3,O60242,CWxP(-),,,0,No
+BDKRB1,P46663,CWxP(+),aliphatic x,A,0,No
+BDKRB2,P30411,CWxP(+),aliphatic x,L,7,Yes
+BRS3,P32247,CWxP(+),aliphatic x,L,12,Yes
+C3AR1,Q16581,CWxP(+),non-aliphatic x,T,3,Yes
+C5AR1,P21730,CWxP(-),,,0,No
+C5AR2,Q9P296,CWxP(+),aliphatic x,A,0,No
+CALCR,P30988,CWxP(-),,,1,Yes
+CASR,P41180,CWxP(-),,,10,Yes
+CB1R,P21554,CWxP(+),aliphatic x,G,12,Yes
+CCKAR,P32238,CWxP(+),aliphatic x,M,12,Yes
+CCKBR,P32239,CWxP(+),aliphatic x,L,11,Yes
+CCR1,P32246,CWxP(-),,,0,No
+CCR10,P46092,CWxP(-),,,7,Yes
+CCR2,P41597,CWxP(-),,,14,Yes
+CCR3,P51677,CWxP(-),,,10,Yes
+CCR4,P51679,CWxP(-),,,12,Yes
+CCR5,P51681,CWxP(-),,,0,No
+CCR6,P51684,CWxP(-),,,8,Yes
+CCR7,P32248,CWxP(-),,,0,No
+CCR8,P51685,CWxP(-),,,10,Yes
+CCR9,P51686,CWxP(-),,,3,Yes
+CCRL2,O00421,CWxP(-),,,1,Yes
+CHRM1,P11229,CWxP(-),,,12,Yes
+CHRM2,P08172,CWxP(-),,,11,Yes
+CHRM3,P20309,CWxP(-),,,12,Yes
+CHRM4,P08173,CWxP(-),,,11,Yes
+CHRM5,P08912,CWxP(-),,,12,Yes
+CMKLR1,Q99788,CWxP(+),non-aliphatic x,C,0,No
+CNR2,P34972,CWxP(+),non-aliphatic x,F,12,Yes
+CRHR1,P34998,CWxP(-),,,18,Yes
+CRHR2,Q13324,CWxP(-),,,0,No
+CXCR1,P25024,CWxP(+),aliphatic x,L,0,No
+CXCR2,P25025,CWxP(+),aliphatic x,L,0,No
+CXCR3,P49682,CWxP(+),non-aliphatic x,T,5,Yes
+CXCR4,P61073,CWxP(+),aliphatic x,L,12,Yes
+CXCR5,P32302,CWxP(+),non-aliphatic x,S,1,Yes
+CXCR6,O00574,CWxP(-),,,12,Yes
+CYSLTR1,Q9Y271,CWxP(-),,,3,Yes
+DRD1,P21728,CWxP(+),aliphatic x,L,12,Yes
+DRD3,P35462,CWxP(+),aliphatic x,L,22,Yes
+DRD4,P21917,CWxP(+),non-aliphatic x,T,1,Yes
+DRD5,P21918,CWxP(+),aliphatic x,L,0,No
+EDG1,P21453,CWxP(+),aliphatic x,A,12,Yes
+EDNRA,P25101,CWxP(+),non-aliphatic x,F,7,Yes
+EDNRB,P24530,CWxP(+),aliphatic x,L,0,No
+EMR3,Q9BY15,CWxP(-),,,0,No
+F2R,P25116,CWxP(-),,,12,Yes
+F2RL1,P55085,CWxP(-),,,4,Yes
+F2RL3,Q96RI0,CWxP(-),,,6,Yes
+FFAR2,O15552,CWxP(-),,,9,Yes
+FFAR3,O14843,CWxP(-),,,0,No
+FFAR4,Q5NUL3,CWxP(-),,,8,Yes
+FPR1,P21462,CWxP(+),non-aliphatic x,S,0,No
+FPR2,P25090,CWxP(+),non-aliphatic x,F,1,Yes
+FPR3,P25089,CWxP(+),non-aliphatic x,F,12,Yes
+FZD1,Q9UP38,CWxP(-),,,12,Yes
+FZD10,Q9ULW2,CWxP(-),,,1,Yes
+FZD2,Q14332,CWxP(-),,,12,Yes
+FZD3,Q9NPG1,CWxP(-),,,12,Yes
+FZD4,Q9ULV1,CWxP(-),,,1,Yes
+FZD5,Q13467,CWxP(-),,,0,No
+FZD6,O60353,CWxP(-),,,0,No
+FZD7,O75084,CWxP(-),,,1,Yes
+FZD8,Q9H461,CWxP(-),,,2,Yes
+FZD9,O00144,CWxP(-),,,12,Yes
+GABBR1,Q9UBS5,CWxP(-),,,1,Yes
+GALR1,P47211,CWxP(-),,,0,No
+GALR2,O43603,CWxP(+),aliphatic x,M,0,No
+GALR3,O60755,CWxP(+),aliphatic x,G,0,No
+GCGR,P47871,CWxP(-),,,12,Yes
+GHRHR,Q02643,CWxP(-),,,1,Yes
+GHSR,Q92847,CWxP(+),aliphatic x,L,12,Yes
+GIPR,P48546,CWxP(-),,,0,No
+GLP1R,P43220,CWxP(-),,,0,No
+GLP2R,O95838,CWxP(-),,,6,Yes
+GNRHR,P30968,CWxP(+),non-aliphatic x,T,0,No
+GPBAR1,Q8TDU6,CWxP(+),aliphatic x,G,5,Yes
+GPR1,P46091,CWxP(+),non-aliphatic x,T,12,Yes
+GPR101,Q96P66,CWxP(-),,,12,Yes
+GPR114,Q8IZF4,CWxP(-),,,0,No
+GPR116,Q8IZF2,CWxP(-),,,12,Yes
+GPR119,Q8TDV5,CWxP(-),,,0,No
+GPR12,P47775,CWxP(+),aliphatic x,M,0,No
+GPR123,Q86SQ6,CWxP(-),,,12,Yes
+GPR124,Q96PE1,CWxP(-),,,0,No
+GPR128,Q96K78,CWxP(-),,,0,No
+GPR132,Q9UNW8,CWxP(-),,,3,Yes
+GPR137,Q96N19,CWxP(-),,,4,Yes
+GPR137B,O60478,CWxP(-),,,1,Yes
+GPR139,Q6DWJ6,CWxP(-),,,11,Yes
+GPR142,Q7Z601,CWxP(-),,,0,No
+GPR143,P51810,CWxP(-),,,13,Yes
+GPR15,P49685,CWxP(-),,,1,Yes
+GPR151,Q8TDV0,CWxP(-),,,12,Yes
+GPR153,Q6NV75,CWxP(-),,,0,No
+GPR156,Q8NFN8,CWxP(-),,,0,No
+GPR157,Q5UAW9,CWxP(-),,,1,Yes
+GPR161,Q8N6U8,CWxP(-),,,2,Yes
+GPR17,Q13304,CWxP(-),,,0,No
+GPR173,Q9NS66,CWxP(-),,,12,Yes
+GPR174,Q9BXC1,CWxP(-),,,0,No
+GPR176,Q14439,CWxP(-),,,4,Yes
+GPR18,Q14330,CWxP(-),,,0,No
+GPR182,O15218,CWxP(+),aliphatic x,L,12,Yes
+GPR183,P32249,CWxP(-),,,12,Yes
+GPR20,Q99678,CWxP(-),,,0,No
+GPR25,O00155,CWxP(-),,,0,No
+GPR27,Q9NS67,CWxP(-),,,2,Yes
+GPR32,O75388,CWxP(-),,,4,Yes
+GPR35,Q9HC97,CWxP(-),,,0,No
+GPR37,O15354,CWxP(-),,,12,Yes
+GPR37L1,O60883,CWxP(-),,,12,Yes
+GPR39,O43194,CWxP(+),aliphatic x,M,12,Yes
+GPR4,P46093,CWxP(-),,,7,Yes
+GPR40,O14842,CWxP(-),,,15,Yes
+GPR42,O15529,CWxP(-),,,1,Yes
+GPR50,Q13585,CWxP(+),non-aliphatic x,C,12,Yes
+GPR52,Q9Y2T5,CWxP(-),,,11,Yes
+GPR55,Q9Y2T6,CWxP(-),,,4,Yes
+GPR56,Q9Y653,CWxP(-),,,0,No
+GPR6,P46095,CWxP(-),,,0,No
+GPR62,Q9BZJ7,CWxP(+),aliphatic x,L,0,No
+GPR65,Q8IYL9,CWxP(-),,,1,Yes
+GPR68,Q15743,CWxP(-),,,6,Yes
+GPR75,O95800,CWxP(-),,,12,Yes
+GPR83,Q9NYM4,CWxP(+),non-aliphatic x,F,6,Yes
+GPR84,Q9NQS5,CWxP(-),,,12,Yes
+GPR85,P60893,CWxP(-),,,12,Yes
+GPR87,Q9BY21,CWxP(-),,,9,Yes
+GPR88,Q9GZN0,CWxP(-),,,0,No
+GPR97,Q86Y34,CWxP(-),,,12,Yes
+GPRC5A,Q8NFJ5,CWxP(-),,,8,Yes
+GPRC5B,Q9NZH0,CWxP(-),,,3,Yes
+GPRC5C,Q9NQ84,CWxP(-),,,4,Yes
+GPRC6A,Q5T6X5,CWxP(-),,,0,No
+GRM1,Q13255,CWxP(-),,,4,Yes
+GRM2,Q14416,CWxP(-),,,0,No
+GRM4,Q14833,CWxP(-),,,0,No
+GRM5,P41594,CWxP(-),,,12,Yes
+GRM6,O15303,CWxP(-),,,1,Yes
+GRM7,Q14831,CWxP(-),,,0,No
+GRPR,P30550,CWxP(+),aliphatic x,L,0,No
+HCAR2,Q8TDS4,CWxP(-),,,3,Yes
+HCAR3,P49019,CWxP(-),,,2,Yes
+HRH1,P35367,CWxP(+),aliphatic x,I,12,Yes
+HRH2,P25021,CWxP(+),non-aliphatic x,F,12,Yes
+HRH3,Q9Y5N1,CWxP(+),aliphatic x,A,12,Yes
+HRH4,Q9H3N8,CWxP(+),aliphatic x,A,12,Yes
+HTR1A,P08908,CWxP(+),aliphatic x,L,12,Yes
+HTR1B,P28222,CWxP(+),aliphatic x,L,12,Yes
+HTR1D,P28221,CWxP(+),aliphatic x,L,12,Yes
+HTR1E,P28566,CWxP(-),,,4,Yes
+HTR1F,P30939,CWxP(+),aliphatic x,L,11,Yes
+HTR2A,P28223,CWxP(-),,,20,Yes
+HTR2B,P41595,CWxP(-),,,12,Yes
+HTR2C,P28335,CWxP(-),,,12,Yes
+HTR4,Q13639,CWxP(+),aliphatic x,A,12,Yes
+HTR5A,P47898,CWxP(+),aliphatic x,I,12,Yes
+HTR6,P50406,CWxP(-),,,12,Yes
+HTR7,P34969,CWxP(+),aliphatic x,L,21,Yes
+KISS1R,Q969F8,CWxP(+),aliphatic x,G,0,No
+LGR4,Q9BXB1,CWxP(-),,,12,Yes
+LGR5,O75473,CWxP(-),,,0,No
+LHCGR,P22888,CWxP(-),,,3,Yes
+LPAR1,Q92633,CWxP(+),non-aliphatic x,T,4,Yes
+LPAR2,Q9HBW0,CWxP(+),non-aliphatic x,T,12,Yes
+LPAR3,Q9UBY5,CWxP(+),non-aliphatic x,T,0,No
+LPAR4,Q99677,CWxP(-),,,0,No
+LPAR5,Q9H1C0,CWxP(-),,,3,Yes
+LPAR6,P43657,CWxP(-),,,2,Yes
+LTB4R,Q15722,CWxP(-),,,12,Yes
+LTB4R2,Q9NPC1,CWxP(-),,,0,No
+MAS1L,P35410,CWxP(-),,,1,Yes
+MC4R,P32245,CWxP(+),aliphatic x,A,7,Yes
+MC5R,P33032,CWxP(+),aliphatic x,A,9,Yes
+MCHR1,Q99705,CWxP(+),aliphatic x,A,23,Yes
+MCHR2,Q969V1,CWxP(-),,,0,No
+MLNR,O43193,CWxP(+),aliphatic x,L,9,Yes
+MRGPRD,Q8TDS7,CWxP(-),,,1,Yes
+MRGPRE,Q86SM8,CWxP(-),,,0,No
+MRGPRF,Q96AM1,CWxP(-),,,4,Yes
+MRGPRX1,Q96LB2,CWxP(-),,,1,Yes
+MRGPRX2,Q96LB1,CWxP(-),,,4,Yes
+MRGPRX3,Q96LB0,CWxP(-),,,3,Yes
+MRGPRX4,Q96LA9,CWxP(-),,,5,Yes
+MTNR1A,P48039,CWxP(+),aliphatic x,A,12,Yes
+MTNR1B,P49286,CWxP(+),aliphatic x,A,12,Yes
+NMBR,P28336,CWxP(+),non-aliphatic x,F,1,Yes
+NMUR1,Q9HB89,CWxP(+),aliphatic x,A,6,Yes
+NMUR2,Q9GZQ4,CWxP(+),aliphatic x,A,0,No
+NPBWR2,P48146,CWxP(+),non-aliphatic x,T,0,No
+NPFFR2,Q9Y5X5,CWxP(-),,,3,Yes
+NPSR1,Q6W5P4,CWxP(+),non-aliphatic x,S,0,No
+NPY1R,P25929,CWxP(+),aliphatic x,L,3,Yes
+NPY2R,P49146,CWxP(-),,,0,No
+NPY4R,P50391,CWxP(-),,,0,No
+NPY5R,Q15761,CWxP(-),,,12,Yes
+NTSR1,P30989,CWxP(+),aliphatic x,L,1,Yes
+NTSR2,O95665,CWxP(+),aliphatic x,L,1,Yes
+OPN1LW,P04000,CWxP(+),aliphatic x,G,8,Yes
+OPN1MW,P04001,CWxP(+),aliphatic x,G,6,Yes
+OPN1SW,P03999,CWxP(-),,,3,Yes
+OPN3,Q9H1Y3,CWxP(+),aliphatic x,M,12,Yes
+OPN4,Q9UHM6,CWxP(-),,,12,Yes
+OPN5,Q6U736,CWxP(-),,,11,Yes
+OPRD1,P41143,CWxP(+),aliphatic x,A,0,No
+OPRK1,P41145,CWxP(+),non-aliphatic x,T,12,Yes
+OPRL1,P41146,CWxP(+),non-aliphatic x,T,11,Yes
+OPRM1,P35372,CWxP(+),non-aliphatic x,T,0,No
+OX1R,O43613,CWxP(-),,,12,Yes
+OX2R,O43614,CWxP(-),,,12,Yes
+OXER1,Q8TDS5,CWxP(-),,,0,No
+OXTR,P30559,CWxP(+),non-aliphatic x,T,1,Yes
+P2RY1,P47900,CWxP(-),,,1,Yes
+P2RY10,O00398,CWxP(-),,,1,Yes
+P2RY11,Q96G91,CWxP(-),,,2,Yes
+P2RY12,Q9H244,CWxP(-),,,0,No
+P2RY13,Q9BPV8,CWxP(-),,,1,Yes
+P2RY4,P51582,CWxP(-),,,0,No
+P2RY6,Q15077,CWxP(-),,,0,No
+P2RY8,Q86VZ1,CWxP(-),,,5,Yes
+PRLHR,P49683,CWxP(+),aliphatic x,L,0,No
+PROKR1,Q8TCW9,CWxP(+),aliphatic x,A,12,Yes
+PROKR2,Q8NFJ6,CWxP(+),aliphatic x,A,3,Yes
+PTAFR,P25105,CWxP(-),,,12,Yes
+PTGDR,Q13258,CWxP(-),,,4,Yes
+PTGDR2,Q9Y5Y4,CWxP(+),aliphatic x,G,8,Yes
+PTGER1,P34995,CWxP(+),non-aliphatic x,S,0,No
+PTGER2,P43116,CWxP(-),,,12,Yes
+PTGER3,P43115,CWxP(+),non-aliphatic x,S,19,Yes
+PTGER4,P35408,CWxP(-),,,8,Yes
+PTGFR,P43088,CWxP(+),non-aliphatic x,S,8,Yes
+PTGIR,P43119,CWxP(-),,,0,No
+PTH1R,Q03431,CWxP(-),,,0,No
+PTH2R,P49190,CWxP(-),,,0,No
+RGR,P47804,CWxP(-),,,0,No
+RHO,P08100,CWxP(+),aliphatic x,V,12,Yes
+RRH,O14718,CWxP(-),,,5,Yes
+RXFP2,Q8WXD0,CWxP(+),aliphatic x,I,0,No
+RXFP4,Q8TDU9,CWxP(+),non-aliphatic x,F,1,Yes
+S1PR2,O95136,CWxP(+),aliphatic x,L,2,Yes
+S1PR3,Q99500,CWxP(+),non-aliphatic x,S,0,No
+S1PR4,O95977,CWxP(+),aliphatic x,G,11,Yes
+S1PR5,Q9H228,CWxP(+),aliphatic x,G,9,Yes
+SMO,Q99835,CWxP(-),,,12,Yes
+SSTR2,P30874,CWxP(+),aliphatic x,L,0,No
+SSTR4,P31391,CWxP(+),aliphatic x,M,0,No
+SSTR5,P35346,CWxP(+),aliphatic x,L,12,Yes
+TAAR9,Q96RI9,CWxP(-),,,0,No
+TACR1,P25103,CWxP(+),aliphatic x,L,12,Yes
+TACR2,P21452,CWxP(+),aliphatic x,L,8,Yes
+TACR3,P29371,CWxP(+),aliphatic x,L,8,Yes
+TBXA2R,P21731,CWxP(+),aliphatic x,L,12,Yes
+TPRA1,Q86W33,CWxP(-),,,1,Yes
+TRHR,P34981,CWxP(-),,,9,Yes
+TSHR,P16473,CWxP(-),,,0,No
+UTS2R,Q9UKP6,CWxP(-),,,1,Yes
+VN1R2,Q8NFZ6,CWxP(-),,,4,Yes
+XCR1,P46094,CWxP(-),,,0,No
