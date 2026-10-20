@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Recompute every statistic reported for the virtual-screening evaluation from
+Recompute the statistics reported for the virtual-screening evaluation from
 the aggregate per-target metrics in ../data/, and print it next to the value
 stated in the manuscript so that any discrepancy is immediately visible.
 
