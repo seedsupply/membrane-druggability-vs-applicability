@@ -34,10 +34,9 @@ A human-readable summary is available at:
 
 Suggested attribution:
 
-  Tarui N, Nguyen TD, Nakayama M (2026) Data from "Defining the
-  applicability domain of AI-based affinity prediction using
-  experimentally standardized membrane-protein benchmarks".
-  SEEDSUPPLY INC. CC BY 4.0.
+  Tarui N, Nguyen TD, Nakayama M (2026) Data from "Evaluating the
+  applicability domain of an AI affinity predictor against standardized
+  membrane-protein binding measurements". SEEDSUPPLY INC. CC BY 4.0.
 
 Note on scope: this license applies to the data files in this directory
 only. The analysis code in scripts/ is licensed separately under the MIT
