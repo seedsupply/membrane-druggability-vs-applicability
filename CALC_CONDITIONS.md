@@ -237,7 +237,7 @@ so its sign is not consistent across families.
 families differ markedly on every proxy, but within families the proxies did not
 consistently track performance. Among GPCRs the nominal associations were
 sensitive to two targets with essentially no representation (GPR85, GPR37L1);
-after excluding them, none of the nine associations examined reached
+after excluding them, none of the twelve associations examined reached
 significance. Among SLC transporters, ChEMBL representation spans three orders
 of magnitude with no association to any performance metric. Family and
 representation are themselves strongly correlated (*r* = −0.64), so a joint

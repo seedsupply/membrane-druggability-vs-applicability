@@ -2,7 +2,7 @@
 
 Aggregate data and analysis code for:
 
-**Delineating the applicability domain of an AI affinity predictor using an experimentally standardized membrane-protein benchmark**
+**Evaluating the applicability domain of an AI affinity predictor against standardized membrane-protein binding measurements**
 Naoki Tarui, Thuy Duong Nguyen, Masaharu Nakayama
 SEEDSUPPLY INC., Japan
 
@@ -14,7 +14,11 @@ Target-level aggregate metrics supporting every figure and table in the manuscri
 
 **This repository does not contain per-compound data.** Individual compound structures and per-compound binding measurements from the Binder2030 platform are proprietary and available under a Data Use Agreement from the corresponding author for academic research; per-compound model predictions are available under the same agreement. A PubChem-overlap subset of the experimental data has been released separately (Tarui, N., Nakayama, M. & Nguyen, T. D. *SLAS Discov.* **39**, 100299, 2026).
 
-The deposited files are sufficient to reproduce all reported statistical analyses, figures and tables without access to the proprietary compound-level measurements.
+The deposited files are sufficient to reproduce the reported downstream statistical
+analyses and the associated quantitative figures and tables without access to the
+proprietary compound-level measurements. The compound-level evaluation itself cannot
+be independently repeated, because the underlying measurements and the per-compound
+model predictions are proprietary.
 
 ---
 
@@ -100,7 +104,7 @@ python scripts/reproduce_statistics.py
 python scripts/verify_ligandability_statistics.py
 ```
 
-`reproduce_statistics.py` recomputes every correlation, group comparison and threshold analysis reported for the virtual-screening evaluation from the CSV files in `data/`, and prints each one alongside the value stated in the manuscript so that any discrepancy is immediately visible.
+`reproduce_statistics.py` recomputes the correlations, group comparisons and threshold analyses reported for the virtual-screening evaluation from the CSV files in `data/`, and prints each one alongside the value stated in the manuscript so that any discrepancy is immediately visible.
 
 `verify_ligandability_statistics.py` does the same for the experimental ligandability analysis: hit recovery by protein family and by mechanistic class, the Fisher exact test comparing GPCRs with accessible-cavity transporters, and the chi-square test across mechanistic classes.
 
